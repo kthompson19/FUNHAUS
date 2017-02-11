@@ -4,16 +4,18 @@ When play begins: say "You and your best friend, Jessica, are standing outside t
 
 Fairgroundsroom is a room. Printed name is "The Fairgrounds".
 
-Hallwayroom is north of Fairgrounds. Printed name is "The Hallway".
+Door1 is a locked lockable door. Door1 is north of Fairgroundsroom and south of Hallwayroom.
 
-Mirrorsroom is east of Hallway. Printed name is "The Mirrors".
+Hallwayroom is north of Door1. Printed name is "The Hallway".
 
-BallPitroom is west of Hallway. Printed name is "The Ball Pit".
+Mirrorsroom is east of Hallwayroom. Printed name is "The Mirrors".
 
-CreepyPaintingsroom is north of Ball Pit. Printed name is "The Creepy Paintings".
+BallPitroom is west of Hallwayroom. Printed name is "The Ball Pit".
 
-RusticBedroom is east of Creepy Paintings. Printed name is "The Rustic Bedroom".
+CreepyPaintingsroom is north of BallPitroom. Printed name is "The Creepy Paintings".
 
-Arcaderoom is north of Mirrors. Printed name is "The Arcade".
+RusticBedroom is east of CreepyPaintingsroom. Printed name is "The Rustic Bedroom".
 
-Basementroom is below Rustic Bedroom. Printed name is "The Basement".
+Arcaderoom is north of Mirrorsroom. Printed name is "The Arcade".
+
+Basementroom is below RusticBedroom. Printed name is "The Basement".

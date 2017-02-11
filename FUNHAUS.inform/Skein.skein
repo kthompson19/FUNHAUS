@@ -14,6 +14,17 @@ An Interactive Fiction by Keely Thompson
 Release 1 / Serial number 170210 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
 
 The Fairgrounds
+You can see Door1 here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1907"></child>
+        </children>
+    </item>
+    <item nodeId="node-1907">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">(first opening Door1)
+It seems to be locked.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
