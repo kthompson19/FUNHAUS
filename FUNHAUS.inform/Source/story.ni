@@ -1,17 +1,19 @@
 "FUNHAUS" by Keely Thompson
 
-Fairgroundsroom is a room. 
+When play begins: say "You and your best friend, Jessica, are standing outside the FUNHAUS, an abandoned funhouse located on your local abandoned fairgrounds. She finally talked you into breaking in with her and checking it out. Time to have some fun..."
 
-Hallwayroom is north of Fairgrounds.
+Fairgroundsroom is a room. Printed name is "The Fairgrounds".
 
-Mirrorsroom is east of Hallway.
+Hallwayroom is north of Fairgrounds. Printed name is "The Hallway".
 
-BallPitroom is west of Hallway.
+Mirrorsroom is east of Hallway. Printed name is "The Mirrors".
 
-CreepyPaintingsroom is north of Ball Pit.
+BallPitroom is west of Hallway. Printed name is "The Ball Pit".
 
-RusticBedroom is east of Creepy Paintings. 
+CreepyPaintingsroom is north of Ball Pit. Printed name is "The Creepy Paintings".
 
-Arcaderoom is north of Mirrors.
+RusticBedroom is east of Creepy Paintings. Printed name is "The Rustic Bedroom".
 
-Basementroom is below Rustic Bedroom.
+Arcaderoom is north of Mirrors. Printed name is "The Arcade".
+
+Basementroom is below Rustic Bedroom. Printed name is "The Basement".
