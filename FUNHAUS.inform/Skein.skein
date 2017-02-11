@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+
+<Skein rootNode="node-1002">
+    <generator>Inform Mac Client (Inform version 1.64/6.33/6M62)</generator>
+    <item nodeId="node-1002">
+        <command xml:space="preserve">FUNHAUS</command>
+        <result xml:space="preserve">
+
+
+FUNHAUS
+An Interactive Fiction by Keely Thompson
+Release 1 / Serial number 170210 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
+
+Fairgroundsroom
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+</Skein>
