@@ -11,10 +11,10 @@ You and your best friend, Jessica, are standing outside the FUNHAUS, an abandone
 
 FUNHAUS
 An Interactive Fiction by Keely Thompson
-Release 1 / Serial number 170210 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
+Release 1 / Serial number 170213 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
 
 The Fairgrounds
-You can see Door1 here.
+It's dark out, and all you can see is the faint outline of a red door with a rickety old sign on top of it. It says FUNHAUS.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -23,8 +23,50 @@ You can see Door1 here.
     </item>
     <item nodeId="node-1907">
         <command xml:space="preserve">n</command>
-        <result xml:space="preserve">(first opening Door1)
+        <result xml:space="preserve">(first opening FUNHAUS Front Door)
 It seems to be locked.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1910"></child>
+        </children>
+    </item>
+    <item nodeId="node-1910">
+        <command xml:space="preserve">i</command>
+        <result xml:space="preserve">You are carrying:
+  Pliers
+  Pepper spray
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1913"></child>
+        </children>
+    </item>
+    <item nodeId="node-1913">
+        <command xml:space="preserve">i</command>
+        <result xml:space="preserve">You are carrying:
+  Pliers
+  Pepper spray
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1923"></child>
+        </children>
+    </item>
+    <item nodeId="node-1923">
+        <command xml:space="preserve">break lock with pliers</command>
+        <result xml:space="preserve">You break the lock on the door to the FUNHAUS. You're in.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1928"></child>
+        </children>
+    </item>
+    <item nodeId="node-1928">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">(first opening FUNHAUS Front Door)
+
+The Hallway
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
