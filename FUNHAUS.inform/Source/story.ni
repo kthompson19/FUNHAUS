@@ -25,8 +25,14 @@ Instead of breaking lock:
 	say "You break the lock on the door to the FUNHAUS. You're in.";
 	Now door1 is unlocked.
 	
-[need to change description for door after lock is broken, also if in hallway. check the sherlock holmes code.]
-Door1 is a locked lockable door. Door1 is north of Fairgroundsroom and south of Hallwayroom. Door1 is scenery. "An old, red door, with paint chipping off from years of weathering and neglect. There's a big lock on it." Printed name is "FUNHAUS Front Door".
+[if descriptions with help from Help Sherlock]
+[need to change description for door after lock is broken, check the sherlock holmes code.]
+Door1 is a locked lockable door. Door1 is north of Fairgroundsroom and south of Hallwayroom. Door1 is scenery. The description is "[if the player is in Fairgroundsroom] An old, red door, with paint chipping off from years of weathering and neglect. There's a big lock on it [end if]. [if the player is in Hallwayroom]The other side of the red door. Your only way out and back to freedom [end if]." Printed name is "FUNHAUS Front Door".
+
+Understand "door" as door1.
+Understand "FUNHAUS Front Door" as door1.
+Understand "front door" as door1.
+
 
 [Hallway]
 Hallwayroom is north of Door1. Printed name is "The Hallway".
