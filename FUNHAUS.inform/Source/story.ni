@@ -12,7 +12,7 @@ instead of commanding list:
 Understand the command break as something new. Breaking is an action applying to two things. Understand "break [something] with [something]" as breaking. 
 
 [when play begins]
-When play begins: say "You and your best friend, Jessica, are standing outside the FUNHAUS, an abandoned funhouse located on your local abandoned fairgrounds. She finally talked you into breaking in with her and checking it out. Time to have some fun..."
+When play begins: say "You and your best friend, Jessica, are standing outside the FUNHAUS, an abandoned funhouse located on your local abandoned fairgrounds. She finally talked you into breaking in with her and checking it out. Time to have some fun... [line break][line break]You can view the commands possible in this game at any time by typing 'commands list'."
 
 The player is carrying Pliers and Pepper spray.
 
@@ -33,9 +33,13 @@ Understand "door" as door1.
 Understand "FUNHAUS Front Door" as door1.
 Understand "front door" as door1.
 
-
 [Hallway]
-Hallwayroom is north of Door1. Printed name is "The Hallway".
+Instead of going north in Fairgroundsroom:
+	If door1 is open:
+		move player to Hallwayroom;
+		say "A flash of white face paint and big red nose grab Jessica from your side. Before you know it they're gone, and all you can hear is the clown cackling and Jessica screaming as he takes her farther and farther into the house. You have to find her and escape as soon as you can."
+		
+Hallwayroom is north of Door1. "A black, ominous hallway. A faded pink door is to the west and a faded blue door is to the east." Printed name is "The Hallway".
 
 Mirrorsroom is east of Hallwayroom. Printed name is "The Mirrors".
 
