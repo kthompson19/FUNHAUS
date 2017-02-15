@@ -35,33 +35,45 @@ Understand "front door" as door1.
 
 [Hallway]
 Instead of going north in Fairgroundsroom:
-	If door1 is open:
+	If door1 is unlocked:
 		move player to Hallwayroom;
-		say "A flash of white face paint and big red nose grab Jessica from your side. Before you know it they're gone, and all you can hear is the clown cackling and Jessica screaming as he takes her farther and farther into the house. You have to find her and escape as soon as you can."
+		say "A flash of white face paint and big red nose grab Jessica from your side. Before you know it they're gone, and all you can hear is the clown cackling and Jessica screaming as he takes her farther and farther into the house. You're all alone now. You have to find her and escape as soon as you can.";
+	Otherwise:
+		say "The door is locked, obviously. The FUNHAUS has been abandoned for years. You have to break in."
 		
 Hallwayroom is north of Door1. "A black, ominous hallway. A faded pink door is to the west and a faded blue door is to the east." Printed name is "The Hallway".
 
-Pinkdoor is a closed openable door. Pinkdoor is west of Hallwayroom and east of BallPitroom. Pinkdoor is scenery. The description is "An old pink door. The paint is fading and chipping off."
+Pinkdoor is a unlocked, lockable, closed and openable door. Pinkdoor is west of Hallwayroom and east of BallPitroom. Pinkdoor is scenery. The description is "An old pink door. The paint is fading and chipping off."
 Understand "pink door" as pinkdoor.
 
-Bluedoor is a closed openable door. Bluedoor is east of Hallwayroom and west of Mirrorsroom. Bluedoor is scenery. The description is "An old blue door. The paint is fading and chipping off."
+Bluedoor is an unlocked, lockable, closed and openable door. Bluedoor is east of Hallwayroom and west of Mirrorsroom. Bluedoor is scenery. The description is "An old blue door. The paint is fading and chipping off."
 Understand "blue door" as bluedoor. 
+
+After going west in Hallwayroom:
+	now pinkdoor is locked.
+	
+After going east in Hallwayroom:
+	now bluedoor is locked.
 
 [Ball Pit Room]
 BallPitroom is west of Pinkdoor. Printed name is "The Ball Pit". "You fall of the edge of the doorway into a pit of plastic colored balls. The walls are completely bare except for four colored indentations."
 
-Indentations are scenery in Ballpitroom. The description is "There are four spherical indentations on the wall. They're colored: red, yellow, green, blue."
+Indentations are scenery in Ballpitroom. The description is "There are four spherical indentations on the wall. A red indentation, a blue indentation, a yellow indentation, and a green indentation.."
 Understand "wall" as indentations. 
 Understand "colored indentations" as indentations.
 Understand "four colored indentations" as indentations. 
 
 Red ball is in Ballpitroom. red ball is undescribed. The description is "A red ball, red like the color of the clown's nose."
+Red indentation is an open container in Ballpitroom. red indentation is scenery. The description is "A red spherical indentation in the wall."
 
 Blue ball is in ballpitroom. blue ball is undescribed. The description is "A red ball, blue like the painted tear on the clown's face."
+Blue indentation is an open container in Ballpitroom. blue indentation is scenery. The description is "A blue spherical indentation in the wall."
 
 Yellow ball is in ballpitroom. yellow ball is undescribed. The description is "A yellow ball, yellow like the sun you'll never see again."
+Yellow indentation is an open container in Ballpitroom. yellow indentation is scenery. The description is "A yellow spherical indentation in the wall."
 
 Green ball is in ballpitroom. green ball is undescribed. The description is "A green ball, green like the grass outside you'll never see again."
+Green indentation is an open container in Ballpitroom. green indentation is scenery. The description is "A green spherical indentation in the wall."
 
 Purple ball is in ballpitroom. purple ball is undescribed. The description is "A purple ball, purple like the shiny cheap sateen of the clown's costume."
 
@@ -70,6 +82,14 @@ Pink ball is in ballpitroom. pink ball is undescribed. The description is "A pin
 Balls is scenery in ballpitroom. balls is undescribed. The description is "Plastic colored balls of the purple, red, yellow, pink, green, and blue variety."
 Instead of taking balls:
 	say "Which ball do you mean dummy? You can't take all of them at once. Jeez, you have to be smarter than this if you want to make it out alive."
+	
+Instead of going east in Ballpitroom:
+	say "The door slammed shut when you fell in and is locked now. You hear a cackle on the other side. Looks like you're not so alone."
+
+After putting Red ball in Red indentation and putting Blue ball in Blue indentation and putting Green ball in Green indentation and putting Yellow ball in Yellow indentation:
+	say "A big rumbling noise erupts around you. You stand in awe as the wall starts to crack. A large rectangular piece of it breaks off and falls into the room, and you barely move out of the way in time. It's a doorway to another room to the north."
+					
+	
 
 [Mirror Room]
 
