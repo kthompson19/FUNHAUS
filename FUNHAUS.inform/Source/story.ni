@@ -19,10 +19,10 @@ The player is carrying Pliers and Pepper spray.
 [Fairgrounds]
 Fairgroundsroom is a room. "It's dark out, and all you can see is the faint outline of a red door with a rickety old sign on top of it. It says FUNHAUS." Printed name is "The Fairgrounds". 
 
-Lock is in Fairgroundsroom. Lock is undescribed. 
+Lock is in Fairgroundsroom. Lock is scenery.
 
 Instead of breaking lock:
-	say "You break the lock on the door to the FUNHAUS. You're in.";
+	say "You break the lock on the door to the FUNHAUS.";
 	Now door1 is unlocked.
 	
 [if descriptions with help from Help Sherlock]
@@ -41,9 +41,39 @@ Instead of going north in Fairgroundsroom:
 		
 Hallwayroom is north of Door1. "A black, ominous hallway. A faded pink door is to the west and a faded blue door is to the east." Printed name is "The Hallway".
 
-Mirrorsroom is east of Hallwayroom. Printed name is "The Mirrors".
+Pinkdoor is a closed openable door. Pinkdoor is west of Hallwayroom and east of BallPitroom. Pinkdoor is scenery. The description is "An old pink door. The paint is fading and chipping off."
+Understand "pink door" as pinkdoor.
 
-BallPitroom is west of Hallwayroom. Printed name is "The Ball Pit".
+Bluedoor is a closed openable door. Bluedoor is east of Hallwayroom and west of Mirrorsroom. Bluedoor is scenery. The description is "An old blue door. The paint is fading and chipping off."
+Understand "blue door" as bluedoor. 
+
+[Ball Pit Room]
+BallPitroom is west of Pinkdoor. Printed name is "The Ball Pit". "You fall of the edge of the doorway into a pit of plastic colored balls. The walls are completely bare except for four colored indentations."
+
+Indentations are scenery in Ballpitroom. The description is "There are four spherical indentations on the wall. They're colored: red, yellow, green, blue."
+Understand "wall" as indentations. 
+Understand "colored indentations" as indentations.
+Understand "four colored indentations" as indentations. 
+
+Red ball is in Ballpitroom. red ball is undescribed. The description is "A red ball, red like the color of the clown's nose."
+
+Blue ball is in ballpitroom. blue ball is undescribed. The description is "A red ball, blue like the painted tear on the clown's face."
+
+Yellow ball is in ballpitroom. yellow ball is undescribed. The description is "A yellow ball, yellow like the sun you'll never see again."
+
+Green ball is in ballpitroom. green ball is undescribed. The description is "A green ball, green like the grass outside you'll never see again."
+
+Purple ball is in ballpitroom. purple ball is undescribed. The description is "A purple ball, purple like the shiny cheap sateen of the clown's costume."
+
+Pink ball is in ballpitroom. pink ball is undescribed. The description is "A pink ball, pink like you mother's favorite dress you'll never see again."
+
+Balls is scenery in ballpitroom. balls is undescribed. The description is "Plastic colored balls of the purple, red, yellow, pink, green, and blue variety."
+Instead of taking balls:
+	say "Which ball do you mean dummy? You can't take all of them at once. Jeez, you have to be smarter than this if you want to make it out alive."
+
+[Mirror Room]
+
+Mirrorsroom is east of Bluedoor. Printed name is "The Mirrors".
 
 CreepyPaintingsroom is north of BallPitroom. Printed name is "The Creepy Paintings".
 
