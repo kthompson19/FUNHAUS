@@ -380,6 +380,11 @@ You put Blue ball into Blue indentation.
         <command xml:space="preserve">n</command>
         <result xml:space="preserve">
 The Creepy Paintings
+The room's walls are lined with dozens of creepy, nerve-racking paintings. There are ones of clowns, dolls, fake Mona Lisa, and even a ghastly girl standing in a dark forest. Wait, the Ghastly Girl seems to be moving!
+
+"Hey little one, why don't you come over and talk to me?" says Ghastly Girl.
+ 
+ (To talk to Ghastly Girl, simply type "Talk to Ghastly Girl.")
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -524,7 +529,120 @@ You put Green ball into Green indentation.
         <command xml:space="preserve">n</command>
         <result xml:space="preserve">
 The Creepy Paintings
+The room's walls are lined with dozens of creepy, nerve-racking paintings. There are ones of clowns, dolls, fake Mona Lisa, and even a ghastly girl standing in a dark forest. Wait, the Ghastly Girl seems to be moving!
 
+"Hey little one, why don't you come over and talk to me?" says Ghastly Girl.
+ 
+ (To talk to Ghastly Girl, simply type "Talk to Ghastly Girl.")
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2305"></child>
+        </children>
+    </item>
+    <item nodeId="node-2305">
+        <command xml:space="preserve">x ghastly girl</command>
+        <result xml:space="preserve">Her face is shrouded by her black, stringy hair. She wears a simple but old-fashioned black dress, and she stands in the middle of a dark forest where nothing seems to grow. Who was the madman who thought to paint this one?!
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2306"></child>
+        </children>
+    </item>
+    <item nodeId="node-2306">
+        <command xml:space="preserve">g</command>
+        <result xml:space="preserve">Her face is shrouded by her black, stringy hair. She wears a simple but old-fashioned black dress, and she stands in the middle of a dark forest where nothing seems to grow. Who was the madman who thought to paint this one?!
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2423"></child>
+        </children>
+    </item>
+    <item nodeId="node-2423">
+        <command xml:space="preserve">talk to ghastly girl</command>
+        <result xml:space="preserve"> "Hey," you say reluctantly. 
+
+ "Hi there, you're new. We don't normally get a lot of visitors around here," replies Ghastly Girl. (To continue talking to Ghastly Girl, simply type "Talk to Ghastly Girl OR g"). 
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2424"></child>
+        </children>
+    </item>
+    <item nodeId="node-2424">
+        <command xml:space="preserve">g</command>
+        <result xml:space="preserve"> "Yeah, well I'm not surprised about that part," you say with a sigh, looking around the dilapidated room. 
+
+ "What's that supposed to mean?! I'll have you know, I actually just saw someone else a few minutes ago, and she was was prettier than you!" Ghastly Girl exclaimed. She looks hurt, like a small child. (To continue talking to Ghastly Girl, simply type "Talk to Ghastly Girl OR g"). 
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2425"></child>
+        </children>
+    </item>
+    <item nodeId="node-2425">
+        <command xml:space="preserve">g</command>
+        <result xml:space="preserve"> "Wait, I'm sorry, I didn't mean that," you hastily apologize. "Who did you see?" 
+
+ "Oh, what's it to you?" Ghastly Girl replies sassily. (To continue talking to Ghastly Girl, simply type "Talk to Ghastly Girl OR g"). 
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2426"></child>
+        </children>
+    </item>
+    <item nodeId="node-2426">
+        <command xml:space="preserve">g</command>
+        <result xml:space="preserve"> "I lost my friend and I'm looking for her. Please, it's really important!" you beg desperately. 
+
+ "Oh fine, I might have seen the master move a certain rug over in the Bedroom, but I don't know." (To continue talking to Ghastly Girl, simply type "Talk to Ghastly Girl OR g"). 
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2427"></child>
+        </children>
+    </item>
+    <item nodeId="node-2427">
+        <command xml:space="preserve">g</command>
+        <result xml:space="preserve"> "A rug? Some help you are. Whatever." you reply. 
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2428"></child>
+        </children>
+    </item>
+    <item nodeId="node-2428">
+        <command xml:space="preserve">g</command>
+        <result xml:space="preserve"> You don't want to talk to Ghastly Girl anymore. She's irritating. 
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2429"></child>
+        </children>
+    </item>
+    <item nodeId="node-2429">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+The Ball Pit
+You fall of the edge of the doorway into a pit of plastic colored balls. The walls are completely bare except for four colored indentations with a big button next to them.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2430"></child>
+        </children>
+    </item>
+    <item nodeId="node-2430">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+The Creepy Paintings
+The room's walls are lined with dozens of creepy, nerve-racking paintings. There are ones of clowns, dolls, fake Mona Lisa, and even a ghastly girl standing in a dark forest. Wait, the Ghastly Girl seems to be moving!
+
+"Hey little one, why don't you come over and talk to me?" says Ghastly Girl.
+ 
+ (To talk to Ghastly Girl, simply type "Talk to Ghastly Girl.")
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2431"></child>
+        </children>
+    </item>
+    <item nodeId="node-2431">
+        <command xml:space="preserve">talk to ghastly girl</command>
+        <result xml:space="preserve"> You don't want to talk to Ghastly Girl anymore. She's irritating. 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>

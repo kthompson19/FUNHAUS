@@ -6,12 +6,16 @@ The list is a backdrop which is everywhere.
 understand the command "commands" as something new. Commanding is an action applying to one thing. understand "commands [things]" as commanding. understand "command [things]" as commanding.
 
 instead of commanding list:
-	say "This is a list of commands available in the game. Any other action does not exist. Available shortcuts for commands are in parenthesis. [line break][line break]Commands: North (n), East (e), South (s), West (w), Examine (x), Look (l), Inventory (i), [line break]Break ____ [bold type]with[roman type] ____ , Take ____ , Insert ____ [bold type]into[roman type]____, Press ____.".
+	say "This is a list of commands available in the game. Any other action does not exist. Available shortcuts for commands are in parenthesis. [line break][line break]Commands: North (n), East (e), South (s), West (w), Examine (x), Look (l), Inventory (i), [line break]Break ____ [bold type]with[roman type] ____ , Take ____ , Insert ____ [bold type]into[roman type]____, Press ____, Talk to ____.".
 	
 [new commands]
 Understand the command break as something new. Breaking is an action applying to two things. Understand "break [something] with [something]" as breaking. 
 
 Understand the command press as something new. Pressing is an action applying to one thing. Understand "press [something]" as pressing.
+
+Talking to is an action applying to one visible thing. Understand
+"talk to [someone]" or “converse with [someone]” as talking to.
+Check talking to: say "[The noun] doesn't reply."
 
 
 [when play begins]
@@ -59,7 +63,7 @@ After going east in Hallwayroom:
 	now bluedoor is locked.
 
 [Ball Pit Room]
-BallPitroom is west of Pinkdoor. Printed name is "The Ball Pit". "You fall of the edge of the doorway into a pit of plastic colored balls. The walls are completely bare except for four colored indentations with a big button next to them."
+BallPitroom is west of Pinkdoor. Printed name is "The Ball Pit". "You fall of the edge of the doorway into a pit of plastic colored balls. The walls are completely bare except for four colored indentations with a big button next to them." [need to change description when coming in from paintings or make it not able to go there]
 
 Indentations are scenery in Ballpitroom. The description is "There are four spherical indentations on the wall. A red indentation, a blue indentation, a yellow indentation, and a green indentation.."
 Understand "wall" as indentations. 
@@ -101,16 +105,25 @@ Instead of pressing button when Red ball is not in Red indentation or Green ball
 Instead of going north in ballpitroom when Red ball is not in Red indentation or Green ball is not in Green indentation or Blue ball is not in Blue indentation or Yellow ball is not in Yellow indentation:
 	say "It's just walls. Nowhere to go."
 	
+[Creepy Painting Room]
+
+CreepyPaintingsroom is north of ballpitroom. "The room's walls are lined with dozens of creepy, nerve-racking paintings. There are ones of clowns, dolls, fake Mona Lisa, and even a ghastly girl standing in a dark forest. Wait, the Ghastly Girl seems to be moving!" Printed name is "The Creepy Paintings".
+
+Ghastly Girl is a woman in Creepypaintingsroom. "'Hey little one, why don't you come over and talk to me?' says Ghastly Girl.[line break] [line  break] (To talk to Ghastly Girl, simply type 'Talk to Ghastly Girl.')". The description is "Her face is shrouded by her black, stringy hair. She wears a simple but old-fashioned black dress, and she stands in the middle of a dark forest where nothing seems to grow. Who was the madman who thought to paint this one?!"
+
+Instead of talking to Ghastly Girl:
+	say "[one of] 'Hey,' you say reluctantly. [paragraph break] 'Hi there, you're new. We don't normally get a lot of visitors around here,' replies Ghastly Girl. (To continue talking to Ghastly Girl, simply type 'Talk to Ghastly Girl OR g'). [or] 'Yeah, well I'm not surprised about that part,' you say with a sigh, looking around the dilapidated room. [paragraph break] 'What's that supposed to mean?! I'll have you know, I actually just saw someone else a few minutes ago, and she was was prettier than you!' Ghastly Girl exclaimed. She looks hurt, like a small child. (To continue talking to Ghastly Girl, simply type 'Talk to Ghastly Girl OR g'). [or] 'Wait, I'm sorry, I didn't mean that,' you hastily apologize. 'Who did you see?' [paragraph break] 'Oh, what's it to you?' Ghastly Girl replies sassily. (To continue talking to Ghastly Girl, simply type 'Talk to Ghastly Girl OR g'). [or] 'I lost my friend and I'm looking for her. Please, it's really important!' you beg desperately. [paragraph break] 'Oh fine, I might have seen the master move a certain rug over in the Bedroom, but I don't know.' (To continue talking to Ghastly Girl, simply type 'Talk to Ghastly Girl OR g'). [or] 'A rug? Some help you are. Whatever.' you reply. [or] You don't want to talk to Ghastly Girl anymore. She's irritating. [stopping]"
+	
+[Rustic Bedroom]
+
+RusticBedroom is east of CreepyPaintingsroom. Printed name is "The Rustic Bedroom".
+
 [Mirror Room]
 
 Mirrorsroom is east of Bluedoor. Printed name is "The Mirrors".
 
 Instead of going west in Mirrorsroom:
 	say "The door slammed shut when you walked in and is locked now. You hear a cackle on the other side. Looks like you're not so alone."
-
-CreepyPaintingsroom is north of ballpitroom. Printed name is "The Creepy Paintings".
-
-RusticBedroom is east of CreepyPaintingsroom. Printed name is "The Rustic Bedroom".
 
 Arcaderoom is north of Mirrorsroom. Printed name is "The Arcade".
 
