@@ -6,10 +6,13 @@ The list is a backdrop which is everywhere.
 understand the command "commands" as something new. Commanding is an action applying to one thing. understand "commands [things]" as commanding. understand "command [things]" as commanding.
 
 instead of commanding list:
-	say "This is a list of commands available in the game. Any other action does not exist. Available shortcuts for commands are in parenthesis. [line break][line break]Commands: North (n), East (e), South (s), West (w), Examine (x), Look (l), Inventory (i), [line break]Break ____ [bold type]with[roman type] ____ , Take ____ .".
+	say "This is a list of commands available in the game. Any other action does not exist. Available shortcuts for commands are in parenthesis. [line break][line break]Commands: North (n), East (e), South (s), West (w), Examine (x), Look (l), Inventory (i), [line break]Break ____ [bold type]with[roman type] ____ , Take ____ , Insert ____ [bold type]into[roman type]____, Press ____.".
 	
 [new commands]
 Understand the command break as something new. Breaking is an action applying to two things. Understand "break [something] with [something]" as breaking. 
+
+Understand the command press as something new. Pressing is an action applying to one thing. Understand "press [something]" as pressing.
+
 
 [when play begins]
 When play begins: say "You and your best friend, Jessica, are standing outside the FUNHAUS, an abandoned funhouse located on your local abandoned fairgrounds. She finally talked you into breaking in with her and checking it out. Time to have some fun... [line break][line break]You can view the commands possible in this game at any time by typing 'commands list'."
@@ -56,7 +59,7 @@ After going east in Hallwayroom:
 	now bluedoor is locked.
 
 [Ball Pit Room]
-BallPitroom is west of Pinkdoor. Printed name is "The Ball Pit". "You fall of the edge of the doorway into a pit of plastic colored balls. The walls are completely bare except for four colored indentations."
+BallPitroom is west of Pinkdoor. Printed name is "The Ball Pit". "You fall of the edge of the doorway into a pit of plastic colored balls. The walls are completely bare except for four colored indentations with a big button next to them."
 
 Indentations are scenery in Ballpitroom. The description is "There are four spherical indentations on the wall. A red indentation, a blue indentation, a yellow indentation, and a green indentation.."
 Understand "wall" as indentations. 
@@ -85,17 +88,27 @@ Instead of taking balls:
 	
 Instead of going east in Ballpitroom:
 	say "The door slammed shut when you fell in and is locked now. You hear a cackle on the other side. Looks like you're not so alone."
-
-After putting Red ball in Red indentation and putting Blue ball in Blue indentation and putting Green ball in Green indentation and putting Yellow ball in Yellow indentation:
-	say "A big rumbling noise erupts around you. You stand in awe as the wall starts to crack. A large rectangular piece of it breaks off and falls into the room, and you barely move out of the way in time. It's a doorway to another room to the north."
-					
 	
+Button is a thing in ballpitroom. Button is undescribed. The description is "A big, red button, probably meant for pressing."
+Understand "big button" as button.
 
+Instead of pressing button when Red ball is in Red indentation and Green ball is in Green indentation and blue ball is in Blue indentation and Yellow ball is in Yellow indentation:
+	say "A big rumbling noise erupts around you. You stand in awe as the wall starts to crack. A large rectangular piece of it breaks off and falls into the room, and you barely move out of the way in time. It's a doorway to another room to the north."
+
+Instead of pressing button when Red ball is not in Red indentation or Green ball is not in Green indentation or Blue ball is not in Blue indentation or Yellow ball is not in Yellow indentation:
+	say "Doesn't seem to do anything yet."
+	
+Instead of going north in ballpitroom when Red ball is not in Red indentation or Green ball is not in Green indentation or Blue ball is not in Blue indentation or Yellow ball is not in Yellow indentation:
+	say "It's just walls. Nowhere to go."
+	
 [Mirror Room]
 
 Mirrorsroom is east of Bluedoor. Printed name is "The Mirrors".
 
-CreepyPaintingsroom is north of BallPitroom. Printed name is "The Creepy Paintings".
+Instead of going west in Mirrorsroom:
+	say "The door slammed shut when you walked in and is locked now. You hear a cackle on the other side. Looks like you're not so alone."
+
+CreepyPaintingsroom is north of ballpitroom. Printed name is "The Creepy Paintings".
 
 RusticBedroom is east of CreepyPaintingsroom. Printed name is "The Rustic Bedroom".
 
