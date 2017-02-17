@@ -1,5 +1,8 @@
 "FUNHAUS" by Keely Thompson
 
+[disable take all, cred: calien]
+Rule for deciding whether all includes something: it does not.
+
 [The commands list code, from Assasin.]
 The list is a backdrop which is everywhere.
 
@@ -8,7 +11,7 @@ understand the command "commands" as something new. Commanding is an action appl
 instead of commanding list:
 	say "This is a list of commands available in the game. Any other action does not exist. Available shortcuts for commands are in parenthesis. [line break][line break]Commands: North (n), East (e), South (s), West (w), Examine (x), Look (l), Inventory (i), [line break]Break ____ [bold type]with[roman type] ____ , Take ____ , Insert ____ [bold type]into[roman type]____, Press ____, Talk to ____.".
 	
-[new commands]
+[new commands, Talking command from Jim Aikin's handbook]
 Understand the command break as something new. Breaking is an action applying to two things. Understand "break [something] with [something]" as breaking. 
 
 Understand the command press as something new. Pressing is an action applying to one thing. Understand "press [something]" as pressing.
@@ -16,7 +19,6 @@ Understand the command press as something new. Pressing is an action applying to
 Talking to is an action applying to one visible thing. Understand
 "talk to [someone]" or “converse with [someone]” as talking to.
 Check talking to: say "[The noun] doesn't reply."
-
 
 [when play begins]
 When play begins: say "You and your best friend, Jessica, are standing outside the FUNHAUS, an abandoned funhouse located on your local abandoned fairgrounds. She finally talked you into breaking in with her and checking it out. Time to have some fun... [line break][line break]You can view the commands possible in this game at any time by typing 'commands list'."
@@ -116,7 +118,40 @@ Instead of talking to Ghastly Girl:
 	
 [Rustic Bedroom]
 
-RusticBedroom is east of CreepyPaintingsroom. Printed name is "The Rustic Bedroom".
+RusticBedroom is east of CreepyPaintingsroom. "You walk into a bedroom that seems completely out of place in the FUNHAUS. It has red walls and a large bed with a rich brown colored oak headboard. There's a brown oak table by the bed with a vase on it and a big tapestry-like rug in the middle of the room." Printed name is "The Rustic Bedroom". 
+
+Walls are scenery in rusticbedroom. The description is "Deep burgundy walls surround you in the bedroom."
+Understand "red walls" as walls.
+
+Bed is scenery in rusticbedroom. The description is "A big bed with lots of pillows and blankets. One of the pillows looks out of place."
+Understand "large bed" as bed.
+
+Headboard is scenery in rusticbedroom. The description is "A large, beautiful oak headboard."
+Understand "oak headboard" as headboard.
+Understand "brown colored oak headboard" as headboard.
+Understand "brown oak headboard" as headboard.
+Understand "brown headboard" as headboard.
+
+oakTable is in rusticbedroom. oakTable is scenery. The description is "A small bedside table. A vase is here."
+Understand "brown oak table" as oaktable.
+Understand "table" as oaktable.
+Understand "brown table" as oaktable.
+
+Vase is an object in rusticbedroom. Vase is undescribed. The description is "A tall, skinny red vase. "
+
+Rug is an object in rusticbedroom. Rug is undescribed. The description is "The rug has very small and intricate red and gold detailing all over it. It looks like it's a little crooked, like it's been moved recently." The rug can be pushed or not pushed. The rug is not pushed.
+Understand "big rug" as rug.
+Understand "big tapestry-like rug" as rug.
+
+After pushing rug:
+	say "You move just a corner of the rug up and discover that the floor underneath it is a much darker shade of wood than anywhere else in the room. You move the rug completely out of the way revealing a trapdoor!";
+	now the rug is pushed.
+	
+Instead of going down in Rusticbedroom:
+	If rug is pushed:
+		move player to basementroom;
+	otherwise:
+		say "There's no way to go down right now."
 
 [Mirror Room]
 
@@ -124,7 +159,9 @@ Mirrorsroom is east of Bluedoor. Printed name is "The Mirrors".
 
 Instead of going west in Mirrorsroom:
 	say "The door slammed shut when you walked in and is locked now. You hear a cackle on the other side. Looks like you're not so alone."
+	
+[Arcade Room]
 
-Arcaderoom is north of Mirrorsroom. Printed name is "The Arcade".
+Arcaderoom is north of Mirrorsroom and east of RusticBedroom. Printed name is "The Arcade".
 
 Basementroom is below RusticBedroom. Printed name is "The Basement".
