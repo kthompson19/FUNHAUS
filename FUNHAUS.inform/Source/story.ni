@@ -20,6 +20,8 @@ Talking to is an action applying to one visible thing. Understand
 "talk to [someone]" or “converse with [someone]” as talking to.
 Check talking to: say "[The noun] doesn't reply."
 
+Understand the command slop as something new. Slopping is an action applying to one thing. Understand "slop [something]" as slopping. [for me to cheat]
+
 [when play begins]
 When play begins: say "You and your best friend, Jessica, are standing outside the FUNHAUS, an abandoned funhouse located on your local abandoned fairgrounds. She finally talked you into breaking in with her and checking it out. Time to have some fun... [line break][line break]You can view the commands possible in this game at any time by typing 'commands list'."
 
@@ -65,8 +67,14 @@ After going east in Hallwayroom:
 	now bluedoor is locked.
 
 [Ball Pit Room]
-BallPitroom is west of Pinkdoor. Printed name is "The Ball Pit". "You fall of the edge of the doorway into a pit of plastic colored balls. The walls are completely bare except for four colored indentations with a big button next to them." [need to change description when coming in from paintings or make it not able to go there]
+BallPitroom is west of Pinkdoor. Printed name is "The Ball Pit". "You fall of the edge of the doorway into a pit of plastic colored balls. The walls are completely bare except for four colored indentations with a big button next to them." 
 
+Instead of slopping red ball:
+	now red ball is in red indentation;
+	now blue ball is in blue indentation;
+	now yellow ball is in yellow indentation;
+	now green ball is in green indentation.
+	
 Indentations are scenery in Ballpitroom. The description is "There are four spherical indentations on the wall. A red indentation, a blue indentation, a yellow indentation, and a green indentation.."
 Understand "wall" as indentations. 
 Understand "colored indentations" as indentations.
@@ -108,6 +116,9 @@ Instead of going north in ballpitroom when Red ball is not in Red indentation or
 	say "It's just walls. Nowhere to go."
 	
 [Creepy Painting Room]
+
+Instead of going south in creepypaintingsroom:
+	say "The piece of the wall is miraculously pushed up back in line with the rest of the wall. You hear a cackle on the other side. Looks like you're not so alone."
 
 CreepyPaintingsroom is north of ballpitroom. "The room's walls are lined with dozens of creepy, nerve-racking paintings. There are ones of clowns, dolls, fake Mona Lisa, and even a ghastly girl standing in a dark forest. Wait, the Ghastly Girl seems to be moving!" Printed name is "The Creepy Paintings".
 
@@ -155,7 +166,9 @@ Instead of going down in Rusticbedroom:
 
 [Mirror Room]
 
-Mirrorsroom is east of Bluedoor. Printed name is "The Mirrors".
+Mirrorsroom is east of Bluedoor. "You walk into the room and the walls are lined with funky, light-bending mirrors. Obviously, they haven't seen the light in years. They're completely covered in dust and grime." Printed name is "The Mirrors".
+
+Parts is an object in Mirrorsroom. Printed name is "Part".
 
 Instead of going west in Mirrorsroom:
 	say "The door slammed shut when you walked in and is locked now. You hear a cackle on the other side. Looks like you're not so alone."
@@ -163,5 +176,6 @@ Instead of going west in Mirrorsroom:
 [Arcade Room]
 
 Arcaderoom is north of Mirrorsroom and east of RusticBedroom. Printed name is "The Arcade".
+
 
 Basementroom is below RusticBedroom. Printed name is "The Basement".

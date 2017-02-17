@@ -39,8 +39,8 @@ It's dark out, and all you can see is the faint outline of a red door with a ric
         <command xml:space="preserve">showverb push</command>
         <result xml:space="preserve">Verb 'clear' 'move' 'push' 'shift' 
      * noun -&gt; Push
-     * noun noun=Routine(345910) -&gt; PushDir
-     * noun 'to' noun=Routine(345947) -&gt; PushDir
+     * noun noun=Routine(346431) -&gt; PushDir
+     * noun 'to' noun=Routine(346468) -&gt; PushDir
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -1149,6 +1149,7 @@ You fall of the edge of the doorway into a pit of plastic colored balls. The wal
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
         <children><child nodeId="node-1111"></child>
+            <child nodeId="node-1201"></child>
             <child nodeId="node-1097"></child>
         </children>
     </item>
@@ -1273,6 +1274,49 @@ You put Red ball into Red indentation.
     <item nodeId="node-1110">
         <command xml:space="preserve">press button</command>
         <result xml:space="preserve">A big rumbling noise erupts around you. You stand in awe as the wall starts to crack. A large rectangular piece of it breaks off and falls into the room, and you barely move out of the way in time. It's a doorway to another room to the north.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1201">
+        <command xml:space="preserve">slop red ball</command>
+        <result xml:space="preserve">&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1202"></child>
+        </children>
+    </item>
+    <item nodeId="node-1202">
+        <command xml:space="preserve">press button</command>
+        <result xml:space="preserve">A big rumbling noise erupts around you. You stand in awe as the wall starts to crack. A large rectangular piece of it breaks off and falls into the room, and you barely move out of the way in time. It's a doorway to another room to the north.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1203"></child>
+        </children>
+    </item>
+    <item nodeId="node-1203">
+        <command xml:space="preserve">undo</command>
+        <result xml:space="preserve">The Ball Pit
+[Previous turn undone.]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1204"></child>
+        </children>
+    </item>
+    <item nodeId="node-1204">
+        <command xml:space="preserve">undo</command>
+        <result xml:space="preserve">The Ball Pit
+[Previous turn undone.]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1205"></child>
+        </children>
+    </item>
+    <item nodeId="node-1205">
+        <command xml:space="preserve">press button</command>
+        <result xml:space="preserve">Doesn't seem to do anything yet.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
