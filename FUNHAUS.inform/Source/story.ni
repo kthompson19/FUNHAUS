@@ -27,7 +27,7 @@ Understand the command fix as something new. Fixing is an action applying to two
 [when play begins]
 When play begins: say "You and your best friend, Jessica, are standing outside the FUNHAUS, an abandoned funhouse located on your local abandoned fairgrounds. She finally talked you into breaking in with her and checking it out. Time to have some fun... [line break][line break]You can view the commands possible in this game at any time by typing 'commands list'."
 
-The player is carrying Pliers.
+The player is carrying Pliers and Pepper spray.
 
 
 [Fairgrounds]
@@ -173,9 +173,6 @@ Instead of going down in Rusticbedroom:
 [Mirror Room]
 
 Mirrorsroom is east of Bluedoor. "You walk into the room and the walls are lined with funky, light-bending mirrors. Obviously, they haven't seen the light in years. They're completely covered in dust and grime. You can see an exit here to the north." Printed name is "The Mirrors".
-
-Pepperspray is an object in Mirrorsroom. Printed name is "Pepper spray". The description is "Jess' can of pepper spray. She brought it with her tonight just in case. She must've dropped it after the clown dragged her away..."
-Understand "pepper spray" as pepperspray.
 
 Instead of going west in Mirrorsroom:
 	say "The door slammed shut when you walked in and is locked now. You hear a cackle on the other side. Looks like you're not so alone."
