@@ -9,9 +9,9 @@ The list is a backdrop which is everywhere.
 understand the command "commands" as something new. Commanding is an action applying to one thing. understand "commands [things]" as commanding. understand "command [things]" as commanding.
 
 instead of commanding list:
-	say "This is a list of commands available in the game. Any other action does not exist. Available shortcuts for commands are in parenthesis. [line break][line break]Commands: North (n), East (e), South (s), West (w), Examine (x), Look (l), Inventory (i), [line break]Break ____ [bold type]with[roman type] ____ , Take ____ , Insert ____ [bold type]into[roman type]____, Press ____, Talk to ____.".
+	say "This is a list of commands available in the game. Any other action does not exist. Available shortcuts for commands are in parenthesis. [line break][line break]Commands: North (n), East (e), South (s), West (w), Examine (x), Look (l), Inventory (i), [line break]Break ____ [bold type]with[roman type] ____ , Take ____ , Insert ____ [bold type]into[roman type]____, Press ____, Talk to ____, Fix____ [bold type]with[roman type] ____ ".
 	
-[new commands, Talking command from Jim Aikin's handbook]
+[new commands, Talking command from Jim Aiken's handbook]
 Understand the command break as something new. Breaking is an action applying to two things. Understand "break [something] with [something]" as breaking. 
 
 Understand the command press as something new. Pressing is an action applying to one thing. Understand "press [something]" as pressing.
@@ -22,10 +22,13 @@ Check talking to: say "[The noun] doesn't reply."
 
 Understand the command slop as something new. Slopping is an action applying to one thing. Understand "slop [something]" as slopping. [for me to cheat]
 
+Understand the command fix as something new. Fixing is an action applying to two things. Understand "fix [something] with [something]" as fixing.
+
 [when play begins]
 When play begins: say "You and your best friend, Jessica, are standing outside the FUNHAUS, an abandoned funhouse located on your local abandoned fairgrounds. She finally talked you into breaking in with her and checking it out. Time to have some fun... [line break][line break]You can view the commands possible in this game at any time by typing 'commands list'."
 
-The player is carrying Pliers and Pepper spray.
+The player is carrying Pliers.
+
 
 [Fairgrounds]
 Fairgroundsroom is a room. "It's dark out, and all you can see is the faint outline of a red door with a rickety old sign on top of it. It says FUNHAUS." Printed name is "The Fairgrounds". 
@@ -51,6 +54,9 @@ Instead of going north in Fairgroundsroom:
 		say "A flash of white face paint and big red nose grab Jessica from your side. Before you know it they're gone, and all you can hear is the clown cackling and Jessica screaming as he takes her farther and farther into the house. You're all alone now. You have to find her and escape as soon as you can.";
 	Otherwise:
 		say "The door is locked, obviously. The FUNHAUS has been abandoned for years. You have to break in."
+		
+Instead of going south in Hallwayroom:
+	say "The door slammed behind you with a crash when you walked in. There's no way out here."
 		
 Hallwayroom is north of Door1. "A black, ominous hallway. A faded pink door is to the west and a faded blue door is to the east." Printed name is "The Hallway".
 
@@ -120,7 +126,7 @@ Instead of going north in ballpitroom when Red ball is not in Red indentation or
 Instead of going south in creepypaintingsroom:
 	say "The piece of the wall is miraculously pushed up back in line with the rest of the wall. You hear a cackle on the other side. Looks like you're not so alone."
 
-CreepyPaintingsroom is north of ballpitroom. "The room's walls are lined with dozens of creepy, nerve-racking paintings. There are ones of clowns, dolls, fake Mona Lisa, and even a ghastly girl standing in a dark forest. Wait, the Ghastly Girl seems to be moving!" Printed name is "The Creepy Paintings".
+CreepyPaintingsroom is north of ballpitroom. "The room's walls are lined with dozens of creepy, nerve-racking paintings. There are ones of clowns, dolls, fake Mona Lisa, and even a ghastly girl standing in a dark forest. Wait, the Ghastly Girl seems to be moving! You can see an exit here to the east." Printed name is "The Creepy Paintings".
 
 Ghastly Girl is a woman in Creepypaintingsroom. "'Hey little one, why don't you come over and talk to me?' says Ghastly Girl.[line break] [line  break] (To talk to Ghastly Girl, simply type 'Talk to Ghastly Girl.')". The description is "Her face is shrouded by her black, stringy hair. She wears a simple but old-fashioned black dress, and she stands in the middle of a dark forest where nothing seems to grow. Who was the madman who thought to paint this one?!"
 
@@ -129,7 +135,7 @@ Instead of talking to Ghastly Girl:
 	
 [Rustic Bedroom]
 
-RusticBedroom is east of CreepyPaintingsroom. "You walk into a bedroom that seems completely out of place in the FUNHAUS. It has red walls and a large bed with a rich brown colored oak headboard. There's a brown oak table by the bed with a vase on it and a big tapestry-like rug in the middle of the room." Printed name is "The Rustic Bedroom". 
+RusticBedroom is east of CreepyPaintingsroom. "You walk into a bedroom that seems completely out of place in the FUNHAUS. It has red walls and a large bed with a rich brown colored oak headboard. There's a brown oak table by the bed with a vase on it and a big tapestry-like rug in the middle of the room. You can see an exit here to the west." Printed name is "The Rustic Bedroom". 
 
 Walls are scenery in rusticbedroom. The description is "Deep burgundy walls surround you in the bedroom."
 Understand "red walls" as walls.
@@ -150,7 +156,7 @@ Understand "brown table" as oaktable.
 
 Vase is an object in rusticbedroom. Vase is undescribed. The description is "A tall, skinny red vase. "
 
-Rug is an object in rusticbedroom. Rug is undescribed. The description is "The rug has very small and intricate red and gold detailing all over it. It looks like it's a little crooked, like it's been moved recently." The rug can be pushed or not pushed. The rug is not pushed.
+Rug is an object in rusticbedroom. Rug is undescribed. The description is "The rug has very small and intricate red and gold detailing all over it. It looks like it's a little crooked, like it's been moved recently." The rug can be pushed or not pushed. The rug is not pushed. [how to do condition]
 Understand "big rug" as rug.
 Understand "big tapestry-like rug" as rug.
 
@@ -166,16 +172,56 @@ Instead of going down in Rusticbedroom:
 
 [Mirror Room]
 
-Mirrorsroom is east of Bluedoor. "You walk into the room and the walls are lined with funky, light-bending mirrors. Obviously, they haven't seen the light in years. They're completely covered in dust and grime." Printed name is "The Mirrors".
+Mirrorsroom is east of Bluedoor. "You walk into the room and the walls are lined with funky, light-bending mirrors. Obviously, they haven't seen the light in years. They're completely covered in dust and grime. You can see an exit here to the north." Printed name is "The Mirrors".
 
-Parts is an object in Mirrorsroom. Printed name is "Part".
+Pepperspray is an object in Mirrorsroom. Printed name is "Pepper spray". The description is "Jess' can of pepper spray. She brought it with her tonight just in case. She must've dropped it after the clown dragged her away..."
+Understand "pepper spray" as pepperspray.
 
 Instead of going west in Mirrorsroom:
 	say "The door slammed shut when you walked in and is locked now. You hear a cackle on the other side. Looks like you're not so alone."
 	
 [Arcade Room]
 
-Arcaderoom is north of Mirrorsroom and east of RusticBedroom. Printed name is "The Arcade".
+Arcaderoom is north of Mirrorsroom and east of RusticBedroom. "The walls are dingy and old. There's a ping pong table in the northeast corner, some sort of Gorilla Game in the southeast corner, and a Whac-a-Mole game on the west wall." Printed name is "The Arcade".
+
+Whacamole is scenery in Arcaderoom. The description is "An old Whac-a-Mole game. It seems to be placed in an odd area, covering a part of the wall. It looks like it's broken and missing a few parts. It must need to be fixed." Whacamole can be broken or not broken. Whacamole is broken. 
+Understand "Whac-a-Mole" as Whacamole.
+
+Gorillagame is scenery in Arcaderoom. The description is "It's some sort of pinball game where you have to get the banana to the gorilla. Interesting."
+Understand "Gorilla Game" as gorillagame.
+
+Banana is scenery in Arcaderoom. The description is "The gorilla wants it, I guess."
+
+Gorilla is scenery in Arcaderoom. The description is "He wants his banana."
+
+Pingpongtable is scenery in Arcaderoom. The description is "An old ping pong table. The actual table part is an off-white color, aged from the years of neglect. There's the normal stuff a ping pong table has, two paddles, a ball, and one of those ball holder things."
+Understand "ping pong table" as pingpongtable. 
+
+pingpongball is an object in arcaderoom. pingpongBall is undescribed. The description is "Just a white ping pong ball. Looks un-bouncy.".
+understand "ball" as pingpongball.
+
+Paddles is an object in arcaderoom. paddles is undescribed. The description is "Your standard red ping pong paddles."
+
+Ballholder is an open container in arcaderoom. Ballholder is undescribed. The description is "A built in holder for ping pong balls. Looks like there's something shiny in here..."
+Understand "ball holder" as ballholder.
+
+Wrench is an object in ballholder. Wrench is undescribed. The description is "A typical wrench used for fixing things."
+
+After taking wrench:
+	Now description of ballholder is "A built in holder for ping pong balls."
+	
+Instead of fixing whacamole: [how to make sure whacamole can only be fixed with wrench]
+	If the second noun is wrench:
+		say "The Whac-a-Mole machine whirs to life and goes crazy! The moles are popping up and down out of their little holes. Finally, the whole machine slides to the right revealing an exit to the west.";
+		Now whacamole is not broken;
+	Otherwise:
+		say "That's hardly the right tool to fix this with.".
+
+Instead of going east in Arcaderoom:
+	if Whacamole is not broken:
+		move player to Rusticbedroom;
+	Otherwise:
+		say "There's no way to go east right now."
 
 
 Basementroom is below RusticBedroom. Printed name is "The Basement".

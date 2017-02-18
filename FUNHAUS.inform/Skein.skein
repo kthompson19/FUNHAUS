@@ -13,7 +13,7 @@ You can view the commands possible in this game at any time by typing "commands 
 
 FUNHAUS
 An Interactive Fiction by Keely Thompson
-Release 1 / Serial number 170216 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
+Release 1 / Serial number 170217 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
 
 The Fairgrounds
 It's dark out, and all you can see is the faint outline of a red door with a rickety old sign on top of it. It says FUNHAUS.
@@ -1136,7 +1136,8 @@ A flash of white face paint and big red nose grab Jessica from your side. Before
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1096"></child>
+        <children><child nodeId="node-1216"></child>
+            <child nodeId="node-1096"></child>
         </children>
     </item>
     <item nodeId="node-1096">
@@ -1401,6 +1402,139 @@ You put Blue ball into Blue indentation.
         <command xml:space="preserve">n</command>
         <result xml:space="preserve">
 The Creepy Paintings
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1216">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">The door slammed behind you with a crash when you walked in. There's no way out here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1223"></child>
+        </children>
+    </item>
+    <item nodeId="node-1223">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">(first opening Bluedoor)
+
+The Mirrors
+You walk into the room and the walls are lined with funky, light-bending mirrors. Obviously, they haven't seen the light in years. They're completely covered in dust and grime. You can see an exit here to the north.
+
+You can see Pepper spray here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1224"></child>
+        </children>
+    </item>
+    <item nodeId="node-1224">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+The Arcade
+The walls are dingy and old. There's a ping pong table in the northeast corner, some sort of Gorilla Game in the southeast corner, and a Whac-a-Mole game on the west wall.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1225"></child>
+        </children>
+    </item>
+    <item nodeId="node-1225">
+        <command xml:space="preserve">x gorilla game</command>
+        <result xml:space="preserve">It's some sort of pinball game where you have to get the banana to the gorilla. Interesting.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1226"></child>
+        </children>
+    </item>
+    <item nodeId="node-1226">
+        <command xml:space="preserve">x ping pong table</command>
+        <result xml:space="preserve">An old ping pong table. The actual table part is an off-white color, aged from the years of neglect. There's the normal stuff a ping pong table has, two paddles, a ball, and one of those ball holder things.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1227"></child>
+        </children>
+    </item>
+    <item nodeId="node-1227">
+        <command xml:space="preserve">x ball holder</command>
+        <result xml:space="preserve">A built in holder for ping pong balls. Looks like there's something shiny in here...
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1252"></child>
+        </children>
+    </item>
+    <item nodeId="node-1252">
+        <command xml:space="preserve">take wrench</command>
+        <result xml:space="preserve">&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1253"></child>
+        </children>
+    </item>
+    <item nodeId="node-1253">
+        <command xml:space="preserve">x ballholder</command>
+        <result xml:space="preserve">A built in holder for ping pong balls.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1254"></child>
+        </children>
+    </item>
+    <item nodeId="node-1254">
+        <command xml:space="preserve">take wrench</command>
+        <result xml:space="preserve">You already have that.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1255"></child>
+        </children>
+    </item>
+    <item nodeId="node-1255">
+        <command xml:space="preserve">i</command>
+        <result xml:space="preserve">You are carrying:
+  Wrench
+  Pliers
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1268"></child>
+        </children>
+    </item>
+    <item nodeId="node-1268">
+        <command xml:space="preserve">fix whacamole</command>
+        <result xml:space="preserve">What do you want to fix Whacamole with?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1269"></child>
+        </children>
+    </item>
+    <item nodeId="node-1269">
+        <command xml:space="preserve">pliers</command>
+        <result xml:space="preserve">That's hardly the right tool to fix this with.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1298"></child>
+        </children>
+    </item>
+    <item nodeId="node-1298">
+        <command xml:space="preserve">fix whacamole with wrench</command>
+        <result xml:space="preserve">The Whac-a-Mole machine whirs to life and goes crazy! The moles are popping up and down out of their little holes. Finally, the whole machine slides to the right revealing an exit to the west.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1314"></child>
+        </children>
+    </item>
+    <item nodeId="node-1314">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+The Rustic Bedroom
+You walk into a bedroom that seems completely out of place in the FUNHAUS. It has red walls and a large bed with a rich brown colored oak headboard. There's a brown oak table by the bed with a vase on it and a big tapestry-like rug in the middle of the room. You can see an exit here to the west.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
