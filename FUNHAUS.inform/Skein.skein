@@ -1136,7 +1136,8 @@ A flash of white face paint and big red nose grab Jessica from your side. Before
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1216"></child>
+        <children><child nodeId="node-1387"></child>
+            <child nodeId="node-1216"></child>
             <child nodeId="node-1096"></child>
         </children>
     </item>
@@ -1422,8 +1423,6 @@ The Creepy Paintings
 The Mirrors
 You walk into the room and the walls are lined with funky, light-bending mirrors. Obviously, they haven't seen the light in years. They're completely covered in dust and grime. You can see an exit here to the north.
 
-You can see Pepper spray here.
-
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
         <children><child nodeId="node-1224"></child>
@@ -1497,6 +1496,7 @@ The walls are dingy and old. There's a ping pong table in the northeast corner, 
         <result xml:space="preserve">You are carrying:
   Wrench
   Pliers
+  Pepper spray
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -1535,6 +1535,226 @@ The walls are dingy and old. There's a ping pong table in the northeast corner, 
         <result xml:space="preserve">
 The Rustic Bedroom
 You walk into a bedroom that seems completely out of place in the FUNHAUS. It has red walls and a large bed with a rich brown colored oak headboard. There's a brown oak table by the bed with a vase on it and a big tapestry-like rug in the middle of the room. You can see an exit here to the west.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1363"></child>
+        </children>
+    </item>
+    <item nodeId="node-1363">
+        <command xml:space="preserve">move rug</command>
+        <result xml:space="preserve">You move just a corner of the rug up and discover that the floor underneath it is a much darker shade of wood than anywhere else in the room. You move the rug completely out of the way revealing a trapdoor!
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1364"></child>
+        </children>
+    </item>
+    <item nodeId="node-1364">
+        <command xml:space="preserve">down</command>
+        <result xml:space="preserve">The Basement
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1365"></child>
+        </children>
+    </item>
+    <item nodeId="node-1365">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1387">
+        <command xml:space="preserve">down</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1388"></child>
+        </children>
+    </item>
+    <item nodeId="node-1388">
+        <command xml:space="preserve">up</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1389"></child>
+        </children>
+    </item>
+    <item nodeId="node-1389">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">(first opening Bluedoor)
+
+The Mirrors
+You walk into the room and the walls are lined with funky, light-bending mirrors. Obviously, they haven't seen the light in years. They're completely covered in dust and grime. You can see an exit here to the north.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1390"></child>
+        </children>
+    </item>
+    <item nodeId="node-1390">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+The Arcade
+The walls are dingy and old. There's a ping pong table in the northeast corner, some sort of Gorilla Game in the southeast corner, and a Whac-a-Mole game on the west wall.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1391"></child>
+        </children>
+    </item>
+    <item nodeId="node-1391">
+        <command xml:space="preserve">take wrench</command>
+        <result xml:space="preserve">Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1392"></child>
+        </children>
+    </item>
+    <item nodeId="node-1392">
+        <command xml:space="preserve">fix whacamole with wrench</command>
+        <result xml:space="preserve">The Whac-a-Mole machine whirs to life and goes crazy! The moles are popping up and down out of their little holes. Finally, the whole machine slides to the right revealing an exit to the west.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1393"></child>
+        </children>
+    </item>
+    <item nodeId="node-1393">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+The Rustic Bedroom
+You walk into a bedroom that seems completely out of place in the FUNHAUS. It has red walls and a large bed with a rich brown colored oak headboard. There's a brown oak table by the bed with a vase on it and a big tapestry-like rug in the middle of the room. You can see an exit here to the west.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1394"></child>
+        </children>
+    </item>
+    <item nodeId="node-1394">
+        <command xml:space="preserve">move rug</command>
+        <result xml:space="preserve">You move just a corner of the rug up and discover that the floor underneath it is a much darker shade of wood than anywhere else in the room. You move the rug completely out of the way revealing a trapdoor!
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1395"></child>
+        </children>
+    </item>
+    <item nodeId="node-1395">
+        <command xml:space="preserve">down</command>
+        <result xml:space="preserve">The Basement
+A dark room with cement walls and floors. There's hardly any furniture in here except for a shelf on the west wall.
+
+"Oh my god, you found me! Help!" exclaims Jess. 
+ 
+ (To talk to Jess, simply type "Talk to Jess".)
+
+After you jump down through the trapdoor, you see Jess in the corner of the dark room tied up! The clown doesn't seem to be around right now, hurry!
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1396"></child>
+        </children>
+    </item>
+    <item nodeId="node-1396">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">
+The Secret Passageway
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1421"></child>
+        </children>
+    </item>
+    <item nodeId="node-1421">
+        <command xml:space="preserve">up</command>
+        <result xml:space="preserve">
+The Fairgrounds
+It's dark out, and all you can see is the faint outline of a red door with a rickety old sign on top of it. It says FUNHAUS.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1448"></child>
+        </children>
+    </item>
+    <item nodeId="node-1448">
+        <command xml:space="preserve">down</command>
+        <result xml:space="preserve">There's no way to go down here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1449"></child>
+        </children>
+    </item>
+    <item nodeId="node-1449">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">The Hallway
+A black, ominous hallway. A faded pink door is to the west and a faded blue door is to the east.
+
+A flash of white face paint and big red nose grab Jessica from your side. Before you know it they're gone, and all you can hear is the clown cackling and Jessica screaming as he takes her farther and farther into the house. You're all alone now. You have to find her and escape as soon as you can.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1450"></child>
+        </children>
+    </item>
+    <item nodeId="node-1450">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+The Mirrors
+You walk into the room and the walls are lined with funky, light-bending mirrors. Obviously, they haven't seen the light in years. They're completely covered in dust and grime. You can see an exit here to the north.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1451"></child>
+        </children>
+    </item>
+    <item nodeId="node-1451">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+The Arcade
+The walls are dingy and old. There's a ping pong table in the northeast corner, some sort of Gorilla Game in the southeast corner, and a Whac-a-Mole game on the west wall.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1452"></child>
+        </children>
+    </item>
+    <item nodeId="node-1452">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+The Rustic Bedroom
+You walk into a bedroom that seems completely out of place in the FUNHAUS. It has red walls and a large bed with a rich brown colored oak headboard. There's a brown oak table by the bed with a vase on it and a big tapestry-like rug in the middle of the room. You can see an exit here to the west.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1453"></child>
+        </children>
+    </item>
+    <item nodeId="node-1453">
+        <command xml:space="preserve">down</command>
+        <result xml:space="preserve">The Basement
+A dark room with cement walls and floors. There's hardly any furniture in here except for a shelf on the west wall.
+
+"Oh my god, you found me! Help!" exclaims Jess. 
+ 
+ (To talk to Jess, simply type "Talk to Jess".)
+
+After you jump down through the trapdoor, you see Jess in the corner of the dark room tied up! The clown doesn't seem to be around right now, hurry!
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1511"></child>
+        </children>
+    </item>
+    <item nodeId="node-1511">
+        <command xml:space="preserve">x jess</command>
+        <result xml:space="preserve">She looks pretty much the same as she did before you guys set out on your adventure, just a lot more shaken up and terrified.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>

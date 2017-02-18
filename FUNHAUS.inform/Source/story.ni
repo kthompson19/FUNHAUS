@@ -39,6 +39,9 @@ Instead of breaking lock:
 	say "You break the lock on the door to the FUNHAUS.";
 	Now door1 is unlocked.
 	
+Instead of going down in Fairgroundsroom:
+	say "There's no way to go down here."
+	
 [if descriptions with help from Help Sherlock]
 [need to change description for door after lock is broken, check the sherlock holmes code.]
 Door1 is a locked lockable door. Door1 is north of Fairgroundsroom and south of Hallwayroom. Door1 is scenery. The description is "[if the player is in Fairgroundsroom] An old, red door, with paint chipping off from years of weathering and neglect. There's a big lock on it [end if]. [if the player is in Hallwayroom]The other side of the red door. Your only way out and back to freedom [end if]." Printed name is "FUNHAUS Front Door".
@@ -130,45 +133,9 @@ CreepyPaintingsroom is north of ballpitroom. "The room's walls are lined with do
 
 Ghastly Girl is a woman in Creepypaintingsroom. "'Hey little one, why don't you come over and talk to me?' says Ghastly Girl.[line break] [line  break] (To talk to Ghastly Girl, simply type 'Talk to Ghastly Girl.')". The description is "Her face is shrouded by her black, stringy hair. She wears a simple but old-fashioned black dress, and she stands in the middle of a dark forest where nothing seems to grow. Who was the madman who thought to paint this one?!"
 
-Instead of talking to Ghastly Girl:
+Instead of talking to Ghastly Girl: [talking blue text with help from Jim Aiken's handbook]
 	say "[one of] 'Hey,' you say reluctantly. [paragraph break] 'Hi there, you're new. We don't normally get a lot of visitors around here,' replies Ghastly Girl. (To continue talking to Ghastly Girl, simply type 'Talk to Ghastly Girl OR g'). [or] 'Yeah, well I'm not surprised about that part,' you say with a sigh, looking around the dilapidated room. [paragraph break] 'What's that supposed to mean?! I'll have you know, I actually just saw someone else a few minutes ago, and she was was prettier than you!' Ghastly Girl exclaimed. She looks hurt, like a small child. (To continue talking to Ghastly Girl, simply type 'Talk to Ghastly Girl OR g'). [or] 'Wait, I'm sorry, I didn't mean that,' you hastily apologize. 'Who did you see?' [paragraph break] 'Oh, what's it to you?' Ghastly Girl replies sassily. (To continue talking to Ghastly Girl, simply type 'Talk to Ghastly Girl OR g'). [or] 'I lost my friend and I'm looking for her. Please, it's really important!' you beg desperately. [paragraph break] 'Oh fine, I might have seen the master move a certain rug over in the Bedroom, but I don't know.' (To continue talking to Ghastly Girl, simply type 'Talk to Ghastly Girl OR g'). [or] 'A rug? Some help you are. Whatever.' you reply. [or] You don't want to talk to Ghastly Girl anymore. She's irritating. [stopping]"
 	
-[Rustic Bedroom]
-
-RusticBedroom is east of CreepyPaintingsroom. "You walk into a bedroom that seems completely out of place in the FUNHAUS. It has red walls and a large bed with a rich brown colored oak headboard. There's a brown oak table by the bed with a vase on it and a big tapestry-like rug in the middle of the room. You can see an exit here to the west." Printed name is "The Rustic Bedroom". 
-
-Walls are scenery in rusticbedroom. The description is "Deep burgundy walls surround you in the bedroom."
-Understand "red walls" as walls.
-
-Bed is scenery in rusticbedroom. The description is "A big bed with lots of pillows and blankets. One of the pillows looks out of place."
-Understand "large bed" as bed.
-
-Headboard is scenery in rusticbedroom. The description is "A large, beautiful oak headboard."
-Understand "oak headboard" as headboard.
-Understand "brown colored oak headboard" as headboard.
-Understand "brown oak headboard" as headboard.
-Understand "brown headboard" as headboard.
-
-oakTable is in rusticbedroom. oakTable is scenery. The description is "A small bedside table. A vase is here."
-Understand "brown oak table" as oaktable.
-Understand "table" as oaktable.
-Understand "brown table" as oaktable.
-
-Vase is an object in rusticbedroom. Vase is undescribed. The description is "A tall, skinny red vase. "
-
-Rug is an object in rusticbedroom. Rug is undescribed. The description is "The rug has very small and intricate red and gold detailing all over it. It looks like it's a little crooked, like it's been moved recently." The rug can be pushed or not pushed. The rug is not pushed. [how to do condition]
-Understand "big rug" as rug.
-Understand "big tapestry-like rug" as rug.
-
-After pushing rug:
-	say "You move just a corner of the rug up and discover that the floor underneath it is a much darker shade of wood than anywhere else in the room. You move the rug completely out of the way revealing a trapdoor!";
-	now the rug is pushed.
-	
-Instead of going down in Rusticbedroom:
-	If rug is pushed:
-		move player to basementroom;
-	otherwise:
-		say "There's no way to go down right now."
 
 [Mirror Room]
 
@@ -205,6 +172,7 @@ Understand "ball holder" as ballholder.
 Wrench is an object in ballholder. Wrench is undescribed. The description is "A typical wrench used for fixing things."
 
 After taking wrench:
+	say "Taken.";
 	Now description of ballholder is "A built in holder for ping pong balls."
 	
 Instead of fixing whacamole: [how to make sure whacamole can only be fixed with wrench]
@@ -219,6 +187,49 @@ Instead of going east in Arcaderoom:
 		move player to Rusticbedroom;
 	Otherwise:
 		say "There's no way to go east right now."
+		
+[Rustic Bedroom]
 
+RusticBedroom is east of CreepyPaintingsroom. "You walk into a bedroom that seems completely out of place in the FUNHAUS. It has red walls and a large bed with a rich brown colored oak headboard. There's a brown oak table by the bed with a vase on it and a big tapestry-like rug in the middle of the room. You can see an exit here to the west." Printed name is "The Rustic Bedroom". 
 
-Basementroom is below RusticBedroom. Printed name is "The Basement".
+Walls are scenery in rusticbedroom. The description is "Deep burgundy walls surround you in the bedroom."
+Understand "red walls" as walls.
+
+Bed is scenery in rusticbedroom. The description is "A big bed with lots of pillows and blankets. One of the pillows looks out of place."
+Understand "large bed" as bed.
+
+Headboard is scenery in rusticbedroom. The description is "A large, beautiful oak headboard."
+Understand "oak headboard" as headboard.
+Understand "brown colored oak headboard" as headboard.
+Understand "brown oak headboard" as headboard.
+Understand "brown headboard" as headboard.
+
+oakTable is in rusticbedroom. oakTable is scenery. The description is "A small bedside table. A vase is here."
+Understand "brown oak table" as oaktable.
+Understand "table" as oaktable.
+Understand "brown table" as oaktable.
+
+Vase is an object in rusticbedroom. Vase is undescribed. The description is "A tall, skinny red vase. "
+
+Rug is an object in rusticbedroom. Rug is undescribed. The description is "The rug has very small and intricate red and gold detailing all over it. It looks like it's a little crooked, like it's been moved recently." The rug can be pushed or not pushed. The rug is not pushed. [how to do condition]
+Understand "big rug" as rug.
+Understand "big tapestry-like rug" as rug.
+
+After pushing rug:
+	say "You move just a corner of the rug up and discover that the floor underneath it is a much darker shade of wood than anywhere else in the room. You move the rug completely out of the way revealing a trapdoor!";
+	now the rug is pushed.
+	
+Instead of going down in Rusticbedroom:
+	If rug is pushed:
+		move player to basementroom;
+		say "After you jump down through the trapdoor, you see Jess in the corner of the dark room tied up! The clown doesn't seem to be around right now, hurry!";
+	otherwise:
+		say "There's no way to go down right now."
+
+[Basement]
+Basementroom is below RusticBedroom. Printed name is "The Basement". "A dark room with cement walls and floors. There's hardly any furniture in here except for a shelf on the west wall."
+
+Jess is a woman in Basementroom. "'Oh my god, you found me! Help!' exclaims Jess. [line break] [line break] (To talk to Jess, simply type 'Talk to Jess'.)" The description is "She looks pretty much the same as she did before you guys set out on your adventure, just a lot more shaken up and terrified."
+
+[Secret Passageway]
+Secretpassagewayroom is south of Basementroom and below fairgroundsroom. Printed name is "The Secret Passageway".
