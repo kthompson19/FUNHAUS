@@ -9,7 +9,7 @@ The list is a backdrop which is everywhere.
 understand the command "commands" as something new. Commanding is an action applying to one thing. understand "commands [things]" as commanding. understand "command [things]" as commanding.
 
 instead of commanding list:
-	say "This is a list of commands available in the game. Any other action does not exist. Available shortcuts for commands are in parenthesis. [line break][line break]Commands: North (n), East (e), South (s), West (w), Examine (x), Look (l), Inventory (i), [line break]Break ____ [bold type]with[roman type] ____ , Take ____ , Insert ____ [bold type]into[roman type]____, Press ____, Talk to ____, Fix____ [bold type]with[roman type] ____ , Pepperspray ____.".
+	say "This is a list of commands available in the game. Any other action does not exist. Available shortcuts for commands are in parenthesis. [line break][line break]Commands: North (n), East (e), South (s), West (w), up, down, Examine (x), Look (l), Inventory (i), [line break]Break ____ [bold type]with[roman type] ____ , Take ____ , Insert ____ [bold type]into[roman type]____, Press ____, Talk to ____, Fix____ [bold type]with[roman type] ____ , Pepperspray ____.".
 	
 [new commands, Talking command from Jim Aiken's handbook]
 Understand the command break as something new. Breaking is an action applying to two things. Understand "break [something] with [something]" as breaking. 
@@ -26,6 +26,8 @@ Understand the command fix as something new. Fixing is an action applying to two
 
 Understand the command pepperspray as something new. Pepperspraying is an action applying to one thing. Understand "pepperspray [something]" as pepperspraying.
 Understand "pepper spray" as pepperspraying.
+
+Understand the command give as something new. Giving is an action applying to two things. Understand "give [something] to [something]" as giving.
 
 [when play begins]
 When play begins: say "You and your best friend, Jessica, are standing outside the FUNHAUS, an abandoned funhouse located on your local abandoned fairgrounds. She finally talked you into breaking in with her and checking it out. Time to have some fun... [line break][line break]You can view the commands possible in this game at any time by typing 'commands list'."
@@ -66,7 +68,7 @@ Instead of going north in Fairgroundsroom:
 		move player to Hallwayroom;
 		say "A flash of white face paint and big red nose grab Jessica from your side. Before you know it they're gone, and all you can hear is the clown cackling and Jessica screaming as he takes her farther and farther into the house. You're all alone now. You have to find her and escape as soon as you can.";
 	Otherwise:
-		say "The door is locked, obviously. The FUNHAUS has been abandoned for years. You have to break in."
+		say "The door is locked, obviously. The FUNHAUS has been abandoned for years. You have to break the lock."
 		
 Instead of going south in Hallwayroom:
 	say "The door slammed behind you with a crash when you walked in. There's no way out here."
@@ -86,7 +88,7 @@ After going east in Hallwayroom:
 	now bluedoor is locked.
 
 [Ball Pit Room]
-BallPitroom is west of Pinkdoor. Printed name is "The Ball Pit". "You fall of the edge of the doorway into a pit of plastic colored balls. The walls are completely bare except for four colored indentations with a big button next to them." 
+BallPitroom is west of Pinkdoor. Printed name is "The Ball Pit". "You fall off the edge of the doorway into a pit of plastic colored balls. The walls are completely bare except for four Colored Indentations with a big button next to them." 
 
 Instead of slopping red ball:
 	now red ball is in red indentation;
@@ -94,10 +96,11 @@ Instead of slopping red ball:
 	now yellow ball is in yellow indentation;
 	now green ball is in green indentation.
 	
-Indentations are scenery in Ballpitroom. The description is "There are four spherical indentations on the wall. A red indentation, a blue indentation, a yellow indentation, and a green indentation.."
+Indentations are scenery in Ballpitroom. The description is "There are four spherical indentations on the wall. A red indentation, a blue indentation, a yellow indentation, and a green indentation."
 Understand "wall" as indentations. 
 Understand "colored indentations" as indentations.
 Understand "four colored indentations" as indentations. 
+
 
 Red ball is in Ballpitroom. red ball is undescribed. The description is "A red ball, red like the color of the clown's nose."
 Red indentation is an open container in Ballpitroom. red indentation is scenery. The description is "A red spherical indentation in the wall."
@@ -161,25 +164,36 @@ Arcaderoom is north of Mirrorsroom and east of RusticBedroom. "The walls are din
 Whacamole is scenery in Arcaderoom. The description is "An old Whac-a-Mole game. It seems to be placed in an odd area, covering a part of the wall. It looks like it's broken and missing a few parts. It must need to be fixed." Whacamole can be broken or not broken. Whacamole is broken. 
 Understand "Whac-a-Mole" as Whacamole.
 
-Gorillagame is scenery in Arcaderoom. The description is "It's some sort of pinball game where you have to get the banana to the gorilla. Interesting."
+Gorillagame is scenery in Arcaderoom. The description is "It's some sort of pinball game where you have to get the banana to the gorilla. Interesting." 
 Understand "Gorilla Game" as gorillagame.
 
 Banana is scenery in Arcaderoom. The description is "The gorilla wants it, I guess."
 
 Gorilla is scenery in Arcaderoom. The description is "He wants his banana."
 
+Instead of giving banana:
+	if second noun is gorilla:
+		say "You play the game and succeed in giving the banana to the gorilla, resulting in a lot of pings and whirs and automated gorilla noises emitting from the machine, but otherwise fruitless. Haha.";
+	otherwise:
+		stop the action.
+
 Pingpongtable is scenery in Arcaderoom. The description is "An old ping pong table. The actual table part is an off-white color, aged from the years of neglect. There's the normal stuff a ping pong table has, two paddles, a ball, and one of those ball holder things."
 Understand "ping pong table" as pingpongtable. 
+Understand "table" as pingpongtable.
 
-pingpongball is an object in arcaderoom. pingpongBall is undescribed. The description is "Just a white ping pong ball. Looks un-bouncy.".
+pingpongball is an object in arcaderoom. pingpongBall is undescribed. The description is "Just a white ping pong ball. Looks un-bouncy.". Printed name is "Ping pong ball".
 understand "ball" as pingpongball.
 
-Paddles is an object in arcaderoom. paddles is undescribed. The description is "Your standard red ping pong paddles."
+Paddles is an object in arcaderoom. paddles is undescribed. The description is "Your standard red ping pong paddles.".
+understand "paddle" as paddles.
+understand "ping pong paddle" as paddles.
 
-Ballholder is an open container in arcaderoom. Ballholder is undescribed. The description is "A built in holder for ping pong balls. Looks like there's something shiny in here..."
+Ballholder is an open container in arcaderoom. Ballholder is scenery. The description is "A built in holder for ping pong balls. Looks like there's Something Shiny in here..."
 Understand "ball holder" as ballholder.
+Understand "holder" as ballholder.
 
 Wrench is an object in ballholder. Wrench is undescribed. The description is "A typical wrench used for fixing things."
+Understand "something shiny" as wrench. 
 
 After taking wrench:
 	say "Taken.";
@@ -191,6 +205,9 @@ Instead of fixing whacamole: [how to make sure whacamole can only be fixed with 
 		Now whacamole is not broken;
 	Otherwise:
 		say "That's hardly the right tool to fix this with.".
+		
+Instead of fixing gorillagame:
+	say "It's already up and running, just a little dusty."
 
 Instead of going east in Arcaderoom:
 	if Whacamole is not broken:
@@ -226,7 +243,7 @@ Understand "big rug" as rug.
 Understand "big tapestry-like rug" as rug.
 
 After pushing rug:
-	say "You move just a corner of the rug up and discover that the floor underneath it is a much darker shade of wood than anywhere else in the room. You move the rug completely out of the way revealing a trapdoor!";
+	say "You move just a corner of the rug up and discover that the floor underneath it is a much darker shade of wood than anywhere else in the room. You move the rug completely out of the way revealing a trapdoor leading down!";
 	now the rug is pushed.
 	
 Instead of going down in Rusticbedroom:
@@ -237,11 +254,18 @@ Instead of going down in Rusticbedroom:
 		say "There's no way to go down right now."
 
 [Basement]
+
+Instead of going up in Basementroom:
+	say "The trapdoor is closed now, and you can't reach it anyways. There's no way back up."
+	
 Basementroom is below RusticBedroom. Printed name is "The Basement". "A dark room with cement walls and floors. There's hardly any furniture in here except for a shelf on the west wall. There's an exit to the south."
 
-Knife is an object in basementroom. knife is undescribed.
+Knife is an object in basementroom. knife is undescribed. Understand "rusty old knife" as knife.
 
-Rope is an object in basementroom. rope is undescribed.
+Shelf is in basementroom. shelf is scenery. The description is "An old shelf. The only thing on it is a rusty old knife."
+
+Rope is an object in basementroom. rope is undescribed. The description is "An old rope tied tightly around your best friend's wrists." 
+Understand "ropes" as rope.
 
 Instead of breaking rope:
 	If second noun is knife:
@@ -274,9 +298,12 @@ Instead of going north in Secretpassagewayroom:
 	
 Clown is an object in Secretpassagewayroom. Clown is undescribed. The description is "sfhioek." Clown can be peppersprayed or not peppersprayed. Clown is not peppersprayed. 
 
+Instead of pepperspraying clown:
+	say "You pepper spray the clown, messing up his makeup and rendering him completely useless to his cause of never letting you two leave.";
+	now clown is peppersprayed.
+
 Instead of going up in Secretpassagewayroom:
 	if clown is peppersprayed:
-		move player to Fairgroundsroom;
 		say "You climb up through the trapdoor and find yourself back outside! You're out of that god-awful FUNHAUS and you're never going back again. Freedom!";
 		end the story finally;
 	otherwise:
