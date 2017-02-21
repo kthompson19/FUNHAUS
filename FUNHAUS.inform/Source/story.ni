@@ -9,7 +9,7 @@ The list is a backdrop which is everywhere.
 understand the command "commands" as something new. Commanding is an action applying to one thing. understand "commands [things]" as commanding. understand "command [things]" as commanding.
 
 instead of commanding list:
-	say "This is a list of commands available in the game. Any other action does not exist. Available shortcuts for commands are in parenthesis. [line break][line break]Commands: North (n), East (e), South (s), West (w), Examine (x), Look (l), Inventory (i), [line break]Break ____ [bold type]with[roman type] ____ , Take ____ , Insert ____ [bold type]into[roman type]____, Press ____, Talk to ____, Fix____ [bold type]with[roman type] ____ ".
+	say "This is a list of commands available in the game. Any other action does not exist. Available shortcuts for commands are in parenthesis. [line break][line break]Commands: North (n), East (e), South (s), West (w), Examine (x), Look (l), Inventory (i), [line break]Break ____ [bold type]with[roman type] ____ , Take ____ , Insert ____ [bold type]into[roman type]____, Press ____, Talk to ____, Fix____ [bold type]with[roman type] ____ , Pepperspray ____.".
 	
 [new commands, Talking command from Jim Aiken's handbook]
 Understand the command break as something new. Breaking is an action applying to two things. Understand "break [something] with [something]" as breaking. 
@@ -24,10 +24,20 @@ Understand the command slop as something new. Slopping is an action applying to 
 
 Understand the command fix as something new. Fixing is an action applying to two things. Understand "fix [something] with [something]" as fixing.
 
+Understand the command pepperspray as something new. Pepperspraying is an action applying to one thing. Understand "pepperspray [something]" as pepperspraying.
+Understand "pepper spray" as pepperspraying.
+
 [when play begins]
 When play begins: say "You and your best friend, Jessica, are standing outside the FUNHAUS, an abandoned funhouse located on your local abandoned fairgrounds. She finally talked you into breaking in with her and checking it out. Time to have some fun... [line break][line break]You can view the commands possible in this game at any time by typing 'commands list'."
 
 The player is carrying Pliers and Pepper spray.
+
+[examining player]
+Instead of examining player:
+	if player is in Fairgroundsroom:
+		say "You look great and ready to take on the adventure.";
+	otherwise:
+		say "You look shaken and a little bit dirty."
 
 
 [Fairgrounds]
@@ -227,9 +237,47 @@ Instead of going down in Rusticbedroom:
 		say "There's no way to go down right now."
 
 [Basement]
-Basementroom is below RusticBedroom. Printed name is "The Basement". "A dark room with cement walls and floors. There's hardly any furniture in here except for a shelf on the west wall."
+Basementroom is below RusticBedroom. Printed name is "The Basement". "A dark room with cement walls and floors. There's hardly any furniture in here except for a shelf on the west wall. There's an exit to the south."
 
-Jess is a woman in Basementroom. "'Oh my god, you found me! Help!' exclaims Jess. [line break] [line break] (To talk to Jess, simply type 'Talk to Jess'.)" The description is "She looks pretty much the same as she did before you guys set out on your adventure, just a lot more shaken up and terrified."
+Knife is an object in basementroom. knife is undescribed.
+
+Rope is an object in basementroom. rope is undescribed.
+
+Instead of breaking rope:
+	If second noun is knife:
+		say "You cut through the rope binding her wrists with the knife. [paragraph break] To talk to Jess, simply type 'Talk to Jess'.";
+		now Jess is untied;
+	otherwise:
+		say "You can't break the rope with that."
+
+Jess is a woman in Basementroom. "'Oh my god, you found me! Help!' exclaims Jess. [line break] [line break] (To talk to Jess, simply type 'Talk to Jess'.)" The description is "She looks pretty much the same as she did before you guys set out on your adventure, just a lot more shaken up and terrified." Jess can be untied or tied. Jess is tied.
+
+Instead of talking to Jess:
+	if Jess is tied:
+		say "[one of] 'Jess! Are you okay?' you ask. [paragraph break] 'I'm okay, we have to 	get out of here! The clown left, but he'll be back soon...' she replies with fear shaking her voice. (To continue talking to Jess, simply type 'Talk to Jess' OR g.) 	[or] 'Okay, but you're tied up!' you exclaim. [paragraph break] 'Yeah, I guess you 	have to find something to break the rope,' she says. [stopping]";
+	otherwise: 
+		say "'Oh, finally! My wrists feel so much better now, let's get out of here!' Jess exclaims."
+		
+Instead of going south in Basementroom:
+	if Jess is untied:
+		move player to Secretpassagewayroom;
+		move Jess to Secretpassagewayroom;
+		say "You run into the Secret Passageway and are met with a cackle and the white-faced, red-nosed clown that has been tormenting you all night! He's blocking the only way out and up back to freedom!";
+	otherwise:
+		say "You can't leave without Jess!".
 
 [Secret Passageway]
-Secretpassagewayroom is south of Basementroom and below fairgroundsroom. Printed name is "The Secret Passageway".
+Secretpassagewayroom is south of Basementroom and below fairgroundsroom. Printed name is "The Secret Passageway". "A barren passageway with a trapdoor on the ceiling leading to the outside world."
+
+Instead of going north in Secretpassagewayroom:
+	say "The basement door slammed closed as you ran in. You're stuck here with the clown until you can find a way around him."
+	
+Clown is an object in Secretpassagewayroom. Clown is undescribed. The description is "sfhioek." Clown can be peppersprayed or not peppersprayed. Clown is not peppersprayed. 
+
+Instead of going up in Secretpassagewayroom:
+	if clown is peppersprayed:
+		move player to Fairgroundsroom;
+		say "You climb up through the trapdoor and find yourself back outside! You're out of that god-awful FUNHAUS and you're never going back again. Freedom!";
+		end the story finally;
+	otherwise:
+		say "The clown is still blocking your way out!".

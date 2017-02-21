@@ -13,7 +13,7 @@ You can view the commands possible in this game at any time by typing "commands 
 
 FUNHAUS
 An Interactive Fiction by Keely Thompson
-Release 1 / Serial number 170217 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
+Release 1 / Serial number 170220 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
 
 The Fairgrounds
 It's dark out, and all you can see is the faint outline of a red door with a rickety old sign on top of it. It says FUNHAUS.
@@ -1151,6 +1151,7 @@ You fall of the edge of the doorway into a pit of plastic colored balls. The wal
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
         <children><child nodeId="node-1111"></child>
+            <child nodeId="node-1555"></child>
             <child nodeId="node-1201"></child>
             <child nodeId="node-1097"></child>
         </children>
@@ -1319,6 +1320,149 @@ You put Red ball into Red indentation.
     <item nodeId="node-1205">
         <command xml:space="preserve">press button</command>
         <result xml:space="preserve">Doesn't seem to do anything yet.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1555">
+        <command xml:space="preserve">slop balls</command>
+        <result xml:space="preserve">&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1556"></child>
+        </children>
+    </item>
+    <item nodeId="node-1556">
+        <command xml:space="preserve">press button</command>
+        <result xml:space="preserve">Doesn't seem to do anything yet.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1557"></child>
+        </children>
+    </item>
+    <item nodeId="node-1557">
+        <command xml:space="preserve">slop red ball</command>
+        <result xml:space="preserve">&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1558"></child>
+        </children>
+    </item>
+    <item nodeId="node-1558">
+        <command xml:space="preserve">press button</command>
+        <result xml:space="preserve">A big rumbling noise erupts around you. You stand in awe as the wall starts to crack. A large rectangular piece of it breaks off and falls into the room, and you barely move out of the way in time. It's a doorway to another room to the north.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1559"></child>
+        </children>
+    </item>
+    <item nodeId="node-1559">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+The Creepy Paintings
+The room's walls are lined with dozens of creepy, nerve-racking paintings. There are ones of clowns, dolls, fake Mona Lisa, and even a ghastly girl standing in a dark forest. Wait, the Ghastly Girl seems to be moving! You can see an exit here to the east.
+
+"Hey little one, why don't you come over and talk to me?" says Ghastly Girl.
+ 
+ (To talk to Ghastly Girl, simply type "Talk to Ghastly Girl.")
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1560"></child>
+        </children>
+    </item>
+    <item nodeId="node-1560">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+The Rustic Bedroom
+You walk into a bedroom that seems completely out of place in the FUNHAUS. It has red walls and a large bed with a rich brown colored oak headboard. There's a brown oak table by the bed with a vase on it and a big tapestry-like rug in the middle of the room. You can see an exit here to the west.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1561"></child>
+        </children>
+    </item>
+    <item nodeId="node-1561">
+        <command xml:space="preserve">move rug</command>
+        <result xml:space="preserve">You move just a corner of the rug up and discover that the floor underneath it is a much darker shade of wood than anywhere else in the room. You move the rug completely out of the way revealing a trapdoor!
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1562"></child>
+        </children>
+    </item>
+    <item nodeId="node-1562">
+        <command xml:space="preserve">down</command>
+        <result xml:space="preserve">The Basement
+A dark room with cement walls and floors. There's hardly any furniture in here except for a shelf on the west wall. There's an exit to the south.
+
+"Oh my god, you found me! Help!" exclaims Jess. 
+ 
+ (To talk to Jess, simply type "Talk to Jess".)
+
+After you jump down through the trapdoor, you see Jess in the corner of the dark room tied up! The clown doesn't seem to be around right now, hurry!
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1563"></child>
+        </children>
+    </item>
+    <item nodeId="node-1563">
+        <command xml:space="preserve">talk to jess</command>
+        <result xml:space="preserve"> "Jess! Are you okay?" you ask. 
+
+ "I'm okay, we have to  get out of here! The clown left, but he'll be back soon..." she replies with fear shaking her voice. (To continue talking to Jess, simply type "Talk to Jess" OR g.)  
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1564"></child>
+        </children>
+    </item>
+    <item nodeId="node-1564">
+        <command xml:space="preserve">g</command>
+        <result xml:space="preserve"> "Okay, but you're tied up!" you exclaim. 
+
+ "Yeah, I guess you  have to find something to break the rope," she says. 
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1565"></child>
+        </children>
+    </item>
+    <item nodeId="node-1565">
+        <command xml:space="preserve">g</command>
+        <result xml:space="preserve"> "Okay, but you're tied up!" you exclaim. 
+
+ "Yeah, I guess you  have to find something to break the rope," she says. 
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1580"></child>
+        </children>
+    </item>
+    <item nodeId="node-1580">
+        <command xml:space="preserve">break rope with knife</command>
+        <result xml:space="preserve">You cut through the rope binding her wrists with the knife. 
+
+ To talk to Jess, simply type "Talk to Jess".
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1581"></child>
+        </children>
+    </item>
+    <item nodeId="node-1581">
+        <command xml:space="preserve">talk to jess</command>
+        <result xml:space="preserve">"Oh, finally! My wrists feel so much better now, let's get out of here!" Jess exclaims.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1582"></child>
+        </children>
+    </item>
+    <item nodeId="node-1582">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">The Secret Passageway
+A barren passageway with a trapdoor on the ceiling leading to the outside world.
+
+You run into the Secret Passageway and are met with a cackle and the white-faced, red-nosed clown that has been tormenting you all night! He's blocking the only way out and up back to freedom!
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -1675,7 +1819,7 @@ The Secret Passageway
         <command xml:space="preserve">up</command>
         <result xml:space="preserve">
 The Fairgrounds
-It's dark out, and all you can see is the faint outline of a red door with a rickety old sign on top of it. It says FUNHAUS.
+I HATE ETHAN.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
