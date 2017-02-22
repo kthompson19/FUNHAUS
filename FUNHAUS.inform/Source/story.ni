@@ -74,6 +74,10 @@ Door1 is a locked lockable door. Door1 is north of Fairgroundsroom and south of 
 Understand "door" as door1. 
 Understand "FUNHAUS Front Door" as door1.
 Understand "front door" as door1.
+Understand "red door" as door1.
+Understand "old red door" as door1.
+Understand "old door" as door1.
+
 
 [Hallway]
 Instead of going north in Fairgroundsroom:
@@ -88,10 +92,10 @@ Instead of going south in Hallwayroom:
 		
 Hallwayroom is north of Door1. "A black, ominous hallway. A faded pink door is to the west and a faded blue door is to the east." Printed name is "The Hallway".
 
-Pinkdoor is a unlocked, lockable, closed and openable door. Pinkdoor is west of Hallwayroom and east of BallPitroom. Pinkdoor is scenery. The description is "An old pink door. The paint is fading and chipping off."
+Pinkdoor is a unlocked, lockable, closed and openable door. Pinkdoor is west of Hallwayroom and east of BallPitroom. Pinkdoor is scenery. The description is "An old pink door. The paint is fading and chipping off." Printed name is "Pink door".
 Understand "pink door" as pinkdoor.
 
-Bluedoor is an unlocked, lockable, closed and openable door. Bluedoor is east of Hallwayroom and west of Mirrorsroom. Bluedoor is scenery. The description is "An old blue door. The paint is fading and chipping off."
+Bluedoor is an unlocked, lockable, closed and openable door. Bluedoor is east of Hallwayroom and west of Mirrorsroom. Bluedoor is scenery. The description is "An old blue door. The paint is fading and chipping off." Printed name is "Blue door".
 Understand "blue door" as bluedoor. 
 
 After going west in Hallwayroom:
@@ -132,6 +136,8 @@ Purple ball is in ballpitroom. purple ball is undescribed. The description is "A
 Pink ball is in ballpitroom. pink ball is undescribed. The description is "A pink ball, pink like you mother's favorite dress you'll never see again."
 
 Balls is scenery in ballpitroom. balls is undescribed. The description is "Plastic colored balls of the purple, red, yellow, pink, green, and blue variety."
+Understand "plastic colored balls" as balls.
+
 Instead of taking balls:
 	say "Which ball do you mean dummy? You can't take all of them at once. Jeez, you have to be smarter than this if you want to make it out alive."
 	
@@ -157,8 +163,25 @@ Instead of going south in creepypaintingsroom:
 
 CreepyPaintingsroom is north of ballpitroom. "The room's walls are lined with dozens of creepy, nerve-racking paintings. There are ones of clowns, dolls, fake Mona Lisa, and even a ghastly girl standing in a dark forest. Wait, the Ghastly Girl seems to be moving! You can see an exit here to the east." Printed name is "The Creepy Paintings".
 
-Ghastly Girl is a woman in Creepypaintingsroom. "'Hey little one, why don't you come over and talk to me?' says Ghastly Girl.[line break] [line  break] (To talk to Ghastly Girl, simply type 'Talk to Ghastly Girl.')". The description is "Her face is shrouded by her black, stringy hair. She wears a simple but old-fashioned black dress, and she stands in the middle of a dark forest where nothing seems to grow. Who was the madman who thought to paint this one?!"
+Walls2 are scenery in Creepypaintingsroom. The description is "Just regular old walls with paintings on them."
+Understand "walls" as walls2.
 
+Paintings are in Creepypaintingsroom. The description is "Creepy, nerve-racking paintings, staring with their beady eyes into your soul."
+Understand "creepy nerve-racking paintings" as paintings.
+Understand "creepy paintings" as paintings.
+Understand "nerve-racking paintings" as paintings.
+Understand "clown painting" as paintings.
+Understand "doll painting" as paintings.
+Understand "fake Mona Lisa" as paintings. 
+
+Ghastly Girl is a woman in Creepypaintingsroom. "'Hey little one, why don't you come over and talk to me?' says Ghastly Girl.[line break] [line  break] (To talk to Ghastly Girl, simply type 'Talk to Ghastly Girl.')". The description is "Her face is shrouded by her black, stringy hair. She wears a simple but old-fashioned black dress, and she stands in the middle of a dark forest where nothing seems to grow. Who was the madman who thought to paint this one?!"
+Understand "ghastly girl painting" as ghastly girl. 
+
+Black dress is in Creepypaintingsroom. Black dress is undescribed. The description is "Ghastly Girl's black dress."
+
+Instead of taking black dress:
+	say "First of all, no, that's Ghastly Girl's and we're not into stealing around here. Second of all, no, IT'S IN A PAINTING!"
+	
 Instead of talking to Ghastly Girl: [talking blue text with help from Jim Aiken's handbook]
 	say "[one of] 'Hey,' you say reluctantly. [paragraph break] 'Hi there, you're new. We don't normally get a lot of visitors around here,' replies Ghastly Girl. (To continue talking to Ghastly Girl, simply type 'Talk to Ghastly Girl OR g'). [or] 'Yeah, well I'm not surprised about that part,' you say with a sigh, looking around the dilapidated room. [paragraph break] 'What's that supposed to mean?! I'll have you know, I actually just saw someone else a few minutes ago, and she was was prettier than you!' Ghastly Girl exclaimed. She looks hurt, like a small child. (To continue talking to Ghastly Girl, simply type 'Talk to Ghastly Girl OR g'). [or] 'Wait, I'm sorry, I didn't mean that,' you hastily apologize. 'Who did you see?' [paragraph break] 'Oh, what's it to you?' Ghastly Girl replies sassily. (To continue talking to Ghastly Girl, simply type 'Talk to Ghastly Girl OR g'). [or] 'I lost my friend and I'm looking for her. Please, it's really important!' you beg desperately. [paragraph break] 'Oh fine, I might have seen the master move a certain rug over in the Bedroom, but I don't know.' (To continue talking to Ghastly Girl, simply type 'Talk to Ghastly Girl OR g'). [or] 'A rug? Some help you are. Whatever.' you reply. [or] You don't want to talk to Ghastly Girl anymore. She's irritating. [stopping]"
 	
