@@ -43,22 +43,35 @@ Instead of examining player:
 
 
 [Fairgrounds]
-Fairgroundsroom is a room. "It's dark out, and all you can see is the faint outline of a red door with a rickety old sign on top of it. It says FUNHAUS." Printed name is "The Fairgrounds". 
+Fairgroundsroom is a room. "It's dark out, and all you can see is the faint outline of a red door to the north with a rickety old sign on top of it. It says FUNHAUS." Printed name is "The Fairgrounds". 
 
-Lock is in Fairgroundsroom. Lock is scenery.
+Lock is in Fairgroundsroom. Lock can be broken or not broken. Lock is not broken. The description is "An old rusty lock on the FUNHAUS door."
+Instead of taking lock:
+	say "Why? Your goal is to get rid of the lock, not take it with you!"
+
+Sign is scenery in Fairgroundsroom. The description is "An old sign that says FUNHAUS in chipping paint."
+Understand "rickety old sign" as sign.
+Understand "old sign" as sign.
+Understand "rickety sign" as sign. 
+
+Instead of breaking sign:
+	say "You can't even reach it!"
 
 Instead of breaking lock:
-	say "You break the lock on the door to the FUNHAUS.";
-	Now door1 is unlocked.
+	if the second noun is pliers:
+		say "You break the lock on the door to the FUNHAUS.";
+		Now door1 is unlocked;
+		Now lock is broken;
+	otherwise:
+		say "That's hardly the right thing to break this with."
 	
 Instead of going down in Fairgroundsroom:
 	say "There's no way to go down here."
 	
 [if descriptions with help from Help Sherlock]
-[need to change description for door after lock is broken, check the sherlock holmes code.]
-Door1 is a locked lockable door. Door1 is north of Fairgroundsroom and south of Hallwayroom. Door1 is scenery. The description is "[if the player is in Fairgroundsroom] An old, red door, with paint chipping off from years of weathering and neglect. There's a big lock on it [end if]. [if the player is in Hallwayroom]The other side of the red door. Your only way out and back to freedom [end if]." Printed name is "FUNHAUS Front Door".
+Door1 is a locked lockable door. Door1 is north of Fairgroundsroom and south of Hallwayroom. Door1 is scenery. The description is "[if the player is in Fairgroundsroom] An old, red door to the north with paint chipping off from years of weathering and neglect. There's a big lock on it [end if]. [if lock is broken]An old, red door to the north with paint chipping off from years of weathering and neglect [end if]. [if the player is in Hallwayroom]The other side of the red door. Your only way out and back to freedom [end if]." Printed name is "FUNHAUS Front Door".
 
-Understand "door" as door1.
+Understand "door" as door1. 
 Understand "FUNHAUS Front Door" as door1.
 Understand "front door" as door1.
 
