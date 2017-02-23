@@ -272,7 +272,7 @@ Instead of going east in Arcaderoom:
 		
 [Rustic Bedroom]
 
-RusticBedroom is east of CreepyPaintingsroom. "You walk into a bedroom that seems completely out of place in the FUNHAUS. It has red walls and a large bed with a rich brown colored oak headboard. There's a brown oak table by the bed with a vase on it and a big tapestry-like rug in the middle of the room. You can see an exit here to the west." Printed name is "The Rustic Bedroom". 
+RusticBedroom is east of CreepyPaintingsroom and above Trapdoor. "You walk into a bedroom that seems completely out of place in the FUNHAUS. It has red walls and a large bed with a rich brown colored oak headboard. There's a brown oak table by the bed with a vase on it and a big tapestry-like rug in the middle of the room. You can see an exit here to the west." Printed name is "The Rustic Bedroom". 
 
 Walls are scenery in rusticbedroom. The description is "Deep burgundy walls surround you in the bedroom."
 Understand "red walls" as walls.
@@ -280,18 +280,33 @@ Understand "red walls" as walls.
 Bed is scenery in rusticbedroom. The description is "A big bed with lots of pillows and blankets. One of the pillows looks out of place."
 Understand "large bed" as bed.
 
+Pillows is an object in rusticbedroom. Pillows is undescribed. The description is "Just some nice soft pillows. One is out of place, maybe someone has slept in it recently..."
+Understand "pillow" as pillows.
+Instead of taking pillows:
+	say "Why would you want to ruin someone's sleep by taking their pillows?"
+
+Blankets is an object in rusticbedroom. Blankets is undescribed. The description is "Fluffy, soft blankets."
+Understand "blanket" as blankets.
+Instead of taking blankets:
+	say "Why would you want to ruin someone's sleep by taking their blankets?"
+
 Headboard is scenery in rusticbedroom. The description is "A large, beautiful oak headboard."
 Understand "oak headboard" as headboard.
 Understand "brown colored oak headboard" as headboard.
 Understand "brown oak headboard" as headboard.
 Understand "brown headboard" as headboard.
+Understand "colored oak headboard" as headboard.
 
 oakTable is in rusticbedroom. oakTable is scenery. The description is "A small bedside table. A vase is here."
 Understand "brown oak table" as oaktable.
 Understand "table" as oaktable.
 Understand "brown table" as oaktable.
 
-Vase is an object in rusticbedroom. Vase is undescribed. The description is "A tall, skinny red vase. "
+Vase is an object in rusticbedroom. Vase is undescribed. The description is "A tall, skinny red vase.".
+Instead of taking vase:
+	say "Nuh-uh. We're already trying to make it out of here without breaking ourselves, we don't need to worry about a vase too."
+Instead of breaking vase:
+	say "Now what good would that do? Just a bunch of glass on the ground you could cut yourself on, NO!"
 
 Rug is an object in rusticbedroom. Rug is undescribed. The description is "The rug has very small and intricate red and gold detailing all over it. It looks like it's a little crooked, like it's been moved recently." The rug can be pushed or not pushed. The rug is not pushed. [how to do condition]
 Understand "big rug" as rug.
@@ -307,13 +322,21 @@ Instead of going down in Rusticbedroom:
 		say "After you jump down through the trapdoor, you see Jess in the corner of the dark room tied up! The clown doesn't seem to be around right now, hurry!";
 	otherwise:
 		say "There's no way to go down right now."
+		
+Trapdoor is a door below rusticbedroom and above basementroom. Trapdoor is undescribed. 
+Instead of opening trapdoor:
+	if rug is not pushed:
+		say "What trapdoor?";
+	if rug is pushed:
+		say "You open trapdoor.";
+		now trapdoor is open.
 
 [Basement]
 
 Instead of going up in Basementroom:
 	say "The trapdoor is closed now, and you can't reach it anyways. There's no way back up."
 	
-Basementroom is below RusticBedroom. Printed name is "The Basement". "A dark room with cement walls and floors. There's hardly any furniture in here except for a shelf on the west wall. There's an exit to the south."
+Basementroom is below Trapdoor. Printed name is "The Basement". "A dark room with cement walls and floors. There's hardly any furniture in here except for a shelf on the west wall. There's an exit to the south."
 
 Knife is an object in basementroom. knife is undescribed. Understand "rusty old knife" as knife.
 

@@ -4028,7 +4028,45 @@ You walk into a bedroom that seems completely out of place in the FUNHAUS. It ha
     </item>
     <item nodeId="node-2378">
         <command xml:space="preserve">break vase with pliers</command>
-        <result xml:space="preserve">&gt;</result>
+        <result xml:space="preserve">Now what good would that do? Just a bunch of glass on the ground you could cut yourself on, NO!
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2604"></child>
+        </children>
+    </item>
+    <item nodeId="node-2604">
+        <command xml:space="preserve">open trapdoor</command>
+        <result xml:space="preserve">What trapdoor?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2605"></child>
+        </children>
+    </item>
+    <item nodeId="node-2605">
+        <command xml:space="preserve">down</command>
+        <result xml:space="preserve">There's no way to go down right now.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2633"></child>
+        </children>
+    </item>
+    <item nodeId="node-2633">
+        <command xml:space="preserve">move rug</command>
+        <result xml:space="preserve">You move just a corner of the rug up and discover that the floor underneath it is a much darker shade of wood than anywhere else in the room. You move the rug completely out of the way revealing a trapdoor leading down!
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2634"></child>
+        </children>
+    </item>
+    <item nodeId="node-2634">
+        <command xml:space="preserve">open trapdoor</command>
+        <result xml:space="preserve">You open trapdoor.
+
+&gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
     <item nodeId="node-1311">
