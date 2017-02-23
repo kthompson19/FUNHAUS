@@ -352,13 +352,15 @@ Instead of breaking rope:
 	otherwise:
 		say "You can't break the rope with that."
 
-Jess is a woman in Basementroom. "'Oh my god, you found me! Help!' exclaims Jess. [line break] [line break] (To talk to Jess, simply type 'Talk to Jess'.)" The description is "She looks pretty much the same as she did before you guys set out on your adventure, just a lot more shaken up and terrified." Jess can be untied or tied. Jess is tied.
+Jess is a woman in Basementroom. "[if Jess is not talked]'Oh my god, you found me! Help!' exclaims Jess. [line break] [line break] (To talk to Jess, simply type 'Talk to Jess'.)[end if]. [if Jess is talked][end if]." The description is "She looks pretty much the same as she did before you guys set out on your adventure, just a lot more shaken up and terrified." Jess can be untied or tied. Jess is tied. Jess can be talked or not talked. Jess is not talked.
 
 Instead of talking to Jess:
 	if Jess is tied:
-		say "[one of] 'Jess! Are you okay?' you ask. [paragraph break] 'I'm okay, we have to 	get out of here! The clown left, but he'll be back soon...' she replies with fear shaking her voice. (To continue talking to Jess, simply type 'Talk to Jess' OR g.) 	[or] 'Okay, but you're tied up!' you exclaim. [paragraph break] 'Yeah, I guess you 	have to find something to break the rope,' she says. [stopping]";
+		say "[one of] 'Jess! Are you okay?' you ask. [paragraph break] 'I'm okay, we have to 	get out of here! The clown left, but he'll be back soon...' she replies with fear shaking her voice. (To continue talking to Jess, simply type 'Talk to Jess' OR g.) 	[or] 'Okay, but you're tied up!' you exclaim. [paragraph break] 'Yeah, I guess you have to find something to break the rope,' she says. [stopping]";
+		now Jess is talked;
 	otherwise: 
-		say "'Oh, finally! My wrists feel so much better now, let's get out of here!' Jess exclaims."
+		say "'Oh, finally! My wrists feel so much better now, let's get out of here!' Jess exclaims.";
+		now Jess is talked.
 		
 Instead of going south in Basementroom:
 	if Jess is untied:
@@ -374,7 +376,16 @@ Secretpassagewayroom is south of Basementroom and below fairgroundsroom. Printed
 Instead of going north in Secretpassagewayroom:
 	say "The basement door slammed closed as you ran in. You're stuck here with the clown until you can find a way around him."
 	
-Clown is an object in Secretpassagewayroom. Clown is undescribed. The description is "sfhioek." Clown can be peppersprayed or not peppersprayed. Clown is not peppersprayed. 
+Clown is an object in Secretpassagewayroom. Clown is undescribed. The description is "A terrifying clown hiding his face behind white face paint and a big red nose. He holds Jess by the back of her shirt, smiling at you." Clown can be peppersprayed or not peppersprayed. Clown is not peppersprayed. 
+
+Instead of examining Jess:
+	if player is in Secretpassagewayroom:
+		say "She's being held by the back of her shirt by the clown and looks horrified.";
+	otherwise:
+		continue the action.
+
+Instead of talking to clown:
+	say "You open your mouth to say something but the clown just cackles loudly over you."
 
 Instead of pepperspraying clown:
 	say "You pepper spray the clown, messing up his makeup and rendering him completely useless to his cause of never letting you two leave.";

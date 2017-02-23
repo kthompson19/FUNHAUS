@@ -4068,6 +4068,116 @@ You walk into a bedroom that seems completely out of place in the FUNHAUS. It ha
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2693"></child>
+        </children>
+    </item>
+    <item nodeId="node-2693">
+        <command xml:space="preserve">down</command>
+        <result xml:space="preserve">The Basement
+A dark room with cement walls and floors. There's hardly any furniture in here except for a shelf on the west wall. There's an exit to the south.
+
+"Oh my god, you found me! Help!" exclaims Jess. 
+ 
+ (To talk to Jess, simply type "Talk to Jess".). .
+
+After you jump down through the trapdoor, you see Jess in the corner of the dark room tied up! The clown doesn't seem to be around right now, hurry!
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2694"></child>
+        </children>
+    </item>
+    <item nodeId="node-2694">
+        <command xml:space="preserve">talk to jess</command>
+        <result xml:space="preserve"> "Jess! Are you okay?" you ask. 
+
+ "I'm okay, we have to  get out of here! The clown left, but he'll be back soon..." she replies with fear shaking her voice. (To continue talking to Jess, simply type "Talk to Jess" OR g.)  
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2695"></child>
+        </children>
+    </item>
+    <item nodeId="node-2695">
+        <command xml:space="preserve">l</command>
+        <result xml:space="preserve">The Basement
+A dark room with cement walls and floors. There's hardly any furniture in here except for a shelf on the west wall. There's an exit to the south.
+
+. .
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2760"></child>
+        </children>
+    </item>
+    <item nodeId="node-2760">
+        <command xml:space="preserve">talk to jess</command>
+        <result xml:space="preserve"> "Okay, but you're tied up!" you exclaim. 
+
+ "Yeah, I guess you have to find something to break the rope," she says. 
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2761"></child>
+        </children>
+    </item>
+    <item nodeId="node-2761">
+        <command xml:space="preserve">l</command>
+        <result xml:space="preserve">The Basement
+A dark room with cement walls and floors. There's hardly any furniture in here except for a shelf on the west wall. There's an exit to the south.
+
+. .
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2796"></child>
+        </children>
+    </item>
+    <item nodeId="node-2796">
+        <command xml:space="preserve">x jess</command>
+        <result xml:space="preserve">She looks pretty much the same as she did before you guys set out on your adventure, just a lot more shaken up and terrified.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2797"></child>
+        </children>
+    </item>
+    <item nodeId="node-2797">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">You can't leave without Jess!
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2798"></child>
+        </children>
+    </item>
+    <item nodeId="node-2798">
+        <command xml:space="preserve">break rope with knife</command>
+        <result xml:space="preserve">You cut through the rope binding her wrists with the knife. 
+
+ To talk to Jess, simply type "Talk to Jess".
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2799"></child>
+        </children>
+    </item>
+    <item nodeId="node-2799">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">The Secret Passageway
+A barren passageway with a trapdoor on the ceiling leading to the outside world.
+
+You run into the Secret Passageway and are met with a cackle and the white-faced, red-nosed clown that has been tormenting you all night! He's blocking the only way out and up back to freedom!
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2800"></child>
+        </children>
+    </item>
+    <item nodeId="node-2800">
+        <command xml:space="preserve">x jess</command>
+        <result xml:space="preserve">She's being held by the back of her shirt by the clown and looks horrified.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
     </item>
     <item nodeId="node-1311">
         <command xml:space="preserve">n</command>
