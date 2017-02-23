@@ -18,8 +18,6 @@ Release 1 / Serial number 170222 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
 The Fairgrounds
 It's dark out, and all you can see is the faint outline of a red door to the north with a rickety old sign on top of it. It says FUNHAUS.
 
-You can see Lock here.
-
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
         <children><child nodeId="node-1236"></child>
@@ -4187,7 +4185,8 @@ The walls are dingy and old. There's a ping pong table in the northeast corner, 
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1312"></child>
+        <children><child nodeId="node-2844"></child>
+            <child nodeId="node-1312"></child>
         </children>
     </item>
     <item nodeId="node-1312">
@@ -4258,6 +4257,98 @@ The walls are dingy and old. There's a ping pong table in the northeast corner, 
         <result xml:space="preserve">You play the game and succeed in giving the banana to the gorilla, resulting in a lot of pings and whirs and automated gorilla noises emitting from the machine, but otherwise fruitless. Haha.
 
 &gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-2844">
+        <command xml:space="preserve">fix whac-a-mole with wrench</command>
+        <result xml:space="preserve">The Whac-a-Mole machine whirs to life and goes crazy! The moles are popping up and down out of their little holes. Finally, the whole machine slides to the right revealing an exit to the west.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2845"></child>
+        </children>
+    </item>
+    <item nodeId="node-2845">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+The Rustic Bedroom
+You walk into a bedroom that seems completely out of place in the FUNHAUS. It has red walls and a large bed with a rich brown colored oak headboard. There's a brown oak table by the bed with a vase on it and a big tapestry-like rug in the middle of the room. You can see an exit here to the west.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2846"></child>
+        </children>
+    </item>
+    <item nodeId="node-2846">
+        <command xml:space="preserve">move rug</command>
+        <result xml:space="preserve">You move just a corner of the rug up and discover that the floor underneath it is a much darker shade of wood than anywhere else in the room. You move the rug completely out of the way revealing a trapdoor leading down!
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2847"></child>
+        </children>
+    </item>
+    <item nodeId="node-2847">
+        <command xml:space="preserve">down</command>
+        <result xml:space="preserve">The Basement
+A dark room with cement walls and floors. There's hardly any furniture in here except for a shelf on the west wall. There's an exit to the south.
+
+"Oh my god, you found me! Help!" exclaims Jess. 
+ 
+ (To talk to Jess, simply type "Talk to Jess".). .
+
+After you jump down through the trapdoor, you see Jess in the corner of the dark room tied up! The clown doesn't seem to be around right now, hurry!
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2848"></child>
+        </children>
+    </item>
+    <item nodeId="node-2848">
+        <command xml:space="preserve">break rope with knife</command>
+        <result xml:space="preserve">You cut through the rope binding her wrists with the knife. 
+
+ To talk to Jess, simply type "Talk to Jess".
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2849"></child>
+        </children>
+    </item>
+    <item nodeId="node-2849">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">The Secret Passageway
+A barren passageway with a trapdoor on the ceiling leading to the outside world.
+
+You run into the Secret Passageway and are met with a cackle and the white-faced, red-nosed clown that has been tormenting you all night! He's blocking the only way out and up back to freedom!
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2850"></child>
+        </children>
+    </item>
+    <item nodeId="node-2850">
+        <command xml:space="preserve">pepperspray clown</command>
+        <result xml:space="preserve">You pepper spray the clown, messing up his makeup and rendering him completely useless to his cause of never letting you two leave.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2851"></child>
+        </children>
+    </item>
+    <item nodeId="node-2851">
+        <command xml:space="preserve">up</command>
+        <result xml:space="preserve">You climb up through the trapdoor and find yourself back outside! You're out of that god-awful FUNHAUS and you're never going back again. Freedom!
+
+
+
+    *** The End ***
+
+
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+&gt; </result>
         <commentary xml:space="preserve"></commentary>
     </item>
     <item nodeId="node-1320">

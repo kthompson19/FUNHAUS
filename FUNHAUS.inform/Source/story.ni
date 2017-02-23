@@ -1,5 +1,19 @@
 "FUNHAUS" by Keely Thompson
 
+[fastest way to win game]
+[break lock with pliers
+north
+east
+north
+fix whac-a-mole with wrench
+west
+move rug
+down
+break rope with knife
+south
+pepperspray clown
+up]
+
 [disable take all, cred: calien]
 Rule for deciding whether all includes something: it does not.
 
@@ -45,7 +59,7 @@ Instead of examining player:
 [Fairgrounds]
 Fairgroundsroom is a room. "It's dark out, and all you can see is the faint outline of a red door to the north with a rickety old sign on top of it. It says FUNHAUS." Printed name is "The Fairgrounds". 
 
-Lock is in Fairgroundsroom. Lock can be broken or not broken. Lock is not broken. The description is "An old rusty lock on the FUNHAUS door."
+Lock is in Fairgroundsroom. Lock can be broken or not broken. Lock is not broken. The description is "An old rusty lock on the FUNHAUS door." Lock is undescribed.
 Instead of taking lock:
 	say "Why? Your goal is to get rid of the lock, not take it with you!"
 
