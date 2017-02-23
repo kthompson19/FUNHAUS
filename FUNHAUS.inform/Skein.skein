@@ -13,7 +13,7 @@ You can view the commands possible in this game at any time by typing "commands 
 
 FUNHAUS
 An Interactive Fiction by Keely Thompson
-Release 1 / Serial number 170221 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
+Release 1 / Serial number 170222 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
 
 The Fairgrounds
 It's dark out, and all you can see is the faint outline of a red door to the north with a rickety old sign on top of it. It says FUNHAUS.
@@ -3843,7 +3843,7 @@ You walk into the room and the walls are lined with funky, light-bending mirrors
     </item>
     <item nodeId="node-2334">
         <command xml:space="preserve">x dust</command>
-        <result xml:space="preserve">You can't see any such thing.
+        <result xml:space="preserve">Dust. Dirty.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -3890,7 +3890,7 @@ The walls are dingy and old. There's a ping pong table in the northeast corner, 
     </item>
     <item nodeId="node-2339">
         <command xml:space="preserve">take ball holder thing</command>
-        <result xml:space="preserve">I only understood you as far as wanting to take Ballholder.
+        <result xml:space="preserve">That's hardly portable.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -3981,7 +3981,7 @@ The walls are dingy and old. There's a ping pong table in the northeast corner, 
     </item>
     <item nodeId="node-2349">
         <command xml:space="preserve">take banana</command>
-        <result xml:space="preserve">That's hardly portable.
+        <result xml:space="preserve">No, it's the gorilla's. We're not going to ruin the only good part about this FUNHAUS.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>

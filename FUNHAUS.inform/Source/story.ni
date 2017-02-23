@@ -173,6 +173,8 @@ Understand "nerve-racking paintings" as paintings.
 Understand "clown painting" as paintings.
 Understand "doll painting" as paintings.
 Understand "fake Mona Lisa" as paintings. 
+Instead of taking paintings:
+	say "Why, so they can follow you around this nasty FUNHAUS and stare with their beady eyes into your soul? I think not."
 
 Ghastly Girl is a woman in Creepypaintingsroom. "'Hey little one, why don't you come over and talk to me?' says Ghastly Girl.[line break] [line  break] (To talk to Ghastly Girl, simply type 'Talk to Ghastly Girl.')". The description is "Her face is shrouded by her black, stringy hair. She wears a simple but old-fashioned black dress, and she stands in the middle of a dark forest where nothing seems to grow. Who was the madman who thought to paint this one?!"
 Understand "ghastly girl painting" as ghastly girl. 
@@ -190,6 +192,18 @@ Instead of talking to Ghastly Girl: [talking blue text with help from Jim Aiken'
 
 Mirrorsroom is east of Bluedoor. "You walk into the room and the walls are lined with funky, light-bending mirrors. Obviously, they haven't seen the light in years. They're completely covered in dust and grime. You can see an exit here to the north." Printed name is "The Mirrors".
 
+Mirrors are scenery in mirrorsroom. The description is "One makes you look fat, this one makes you look ugly. Is it the mirror?"
+Understand "funky light-bending mirrors" as mirrors. 
+Understand "funky mirrors" as mirrors.
+Understand "light-bending mirrors" as mirrors.
+Understand "light bending mirrors" as mirrors.
+Instead of taking Mirrors:
+	say "Why, so you can constantly be reminded of your fat and ugly alter ego? I think not."
+
+Dust is scenery in mirrorsroom. The description is "Dust. Dirty."
+Instead of taking dust:
+	say "Why on earth would you want to take DUST?"
+
 Instead of going west in Mirrorsroom:
 	say "The door slammed shut when you walked in and is locked now. You hear a cackle on the other side. Looks like you're not so alone."
 	
@@ -204,8 +218,12 @@ Gorillagame is scenery in Arcaderoom. The description is "It's some sort of pinb
 Understand "Gorilla Game" as gorillagame.
 
 Banana is scenery in Arcaderoom. The description is "The gorilla wants it, I guess."
+Instead of taking banana:
+	say "No, it's the gorilla's. We're not going to ruin the only good part about this FUNHAUS."
 
 Gorilla is scenery in Arcaderoom. The description is "He wants his banana."
+Instead of taking gorilla:
+	say "No, he is destined to be with his banana. Don't kill hope, you hope killer."
 
 Instead of giving banana:
 	if second noun is gorilla:
@@ -227,6 +245,7 @@ understand "ping pong paddle" as paddles.
 Ballholder is an open container in arcaderoom. Ballholder is scenery. The description is "A built in holder for ping pong balls. Looks like there's Something Shiny in here..."
 Understand "ball holder" as ballholder.
 Understand "holder" as ballholder.
+Understand "ball holder thing" as ballholder.
 
 Wrench is an object in ballholder. Wrench is undescribed. The description is "A typical wrench used for fixing things."
 Understand "something shiny" as wrench. 
