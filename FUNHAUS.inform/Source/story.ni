@@ -1,23 +1,9 @@
 "FUNHAUS" by Keely Thompson
 
-[fastest way to win game]
-[break lock with pliers
-north
-east
-north
-fix whac-a-mole with wrench
-west
-move rug
-down
-break rope with knife
-south
-pepperspray clown
-up]
-
 [disable take all, cred: calien]
 Rule for deciding whether all includes something: it does not.
 
-[The commands list code, from Assasin.]
+[The commands list code, from Assassin.]
 The list is a backdrop which is everywhere.
 
 understand the command "commands" as something new. Commanding is an action applying to one thing. understand "commands [things]" as commanding. understand "command [things]" as commanding.
@@ -121,6 +107,9 @@ After going east in Hallwayroom:
 [Ball Pit Room]
 BallPitroom is west of Pinkdoor. Printed name is "The Ball Pit". "You fall off the edge of the doorway into a pit of plastic colored balls. The walls are completely bare except for four Colored Indentations with a big button next to them." 
 
+Ballwalls is scenery in ballpitroom. The description is "Blank walls."
+Understand "walls" as ballwalls.
+
 Instead of slopping red ball:
 	now red ball is in red indentation;
 	now blue ball is in blue indentation;
@@ -131,7 +120,6 @@ Indentations are scenery in Ballpitroom. The description is "There are four sphe
 Understand "wall" as indentations. 
 Understand "colored indentations" as indentations.
 Understand "four colored indentations" as indentations. 
-
 
 Red ball is in Ballpitroom. red ball is undescribed. The description is "A red ball, red like the color of the clown's nose."
 Red indentation is an open container in Ballpitroom. red indentation is scenery. The description is "A red spherical indentation in the wall."
@@ -180,7 +168,7 @@ CreepyPaintingsroom is north of ballpitroom. "The room's walls are lined with do
 Walls2 are scenery in Creepypaintingsroom. The description is "Just regular old walls with paintings on them."
 Understand "walls" as walls2.
 
-Paintings are in Creepypaintingsroom. The description is "Creepy, nerve-racking paintings, staring with their beady eyes into your soul."
+Paintings are in Creepypaintingsroom. Paintings is undescribed. The description is "Creepy, nerve-racking paintings, staring with their beady eyes into your soul."
 Understand "creepy nerve-racking paintings" as paintings.
 Understand "creepy paintings" as paintings.
 Understand "nerve-racking paintings" as paintings.
@@ -352,6 +340,12 @@ Instead of going up in Basementroom:
 	
 Basementroom is below Trapdoor. Printed name is "The Basement". "A dark room with cement walls and floors. There's hardly any furniture in here except for a shelf on the west wall. There's an exit to the south."
 
+Cementwalls is scenery in Basementroom. The description is "Dark cement walls."
+Understand "walls" as cementwalls.
+
+Cementfloor is scenery in basementroom. the description is "Dark cement floors."
+Understand "floor" as cementfloor.
+
 Knife is an object in basementroom. knife is undescribed. Understand "rusty old knife" as knife.
 
 Shelf is in basementroom. shelf is scenery. The description is "An old shelf. The only thing on it is a rusty old knife."
@@ -385,7 +379,7 @@ Instead of going south in Basementroom:
 		say "You can't leave without Jess!".
 
 [Secret Passageway]
-Secretpassagewayroom is south of Basementroom and below fairgroundsroom. Printed name is "The Secret Passageway". "A barren passageway with a trapdoor on the ceiling leading to the outside world."
+Secretpassagewayroom is south of Basementroom and below fairgroundsroom. Printed name is "The Secret Passageway". "A barren passageway with a trapdoor on the ceiling leading up to the outside world."
 
 Instead of going north in Secretpassagewayroom:
 	say "The basement door slammed closed as you ran in. You're stuck here with the clown until you can find a way around him."
@@ -411,3 +405,17 @@ Instead of going up in Secretpassagewayroom:
 		end the story finally;
 	otherwise:
 		say "The clown is still blocking your way out!".
+		
+[fastest way to win game]
+[break lock with pliers
+north
+east
+north
+fix whac-a-mole with wrench
+west
+move rug
+down
+break rope with knife
+south
+pepperspray clown
+up]

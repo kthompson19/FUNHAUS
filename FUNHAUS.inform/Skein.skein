@@ -13,7 +13,7 @@ You can view the commands possible in this game at any time by typing "commands 
 
 FUNHAUS
 An Interactive Fiction by Keely Thompson
-Release 1 / Serial number 170222 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
+Release 1 / Serial number 170227 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
 
 The Fairgrounds
 It's dark out, and all you can see is the faint outline of a red door to the north with a rickety old sign on top of it. It says FUNHAUS.
@@ -27,7 +27,778 @@ It's dark out, and all you can see is the faint outline of a red door to the nor
             <child nodeId="node-1070"></child>
             <child nodeId="node-1049"></child>
             <child nodeId="node-1003"></child>
+            <child nodeId="node-2852"></child>
         </children>
+    </item>
+    <item nodeId="node-2852">
+        <command xml:space="preserve">x door</command>
+        <result xml:space="preserve"> An old, red door to the north with paint chipping off from years of weathering and neglect. There's a big lock on it . . .
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2853"></child>
+        </children>
+    </item>
+    <item nodeId="node-2853">
+        <command xml:space="preserve">x lock</command>
+        <result xml:space="preserve">An old rusty lock on the FUNHAUS door.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2854"></child>
+        </children>
+    </item>
+    <item nodeId="node-2854">
+        <command xml:space="preserve">x sign</command>
+        <result xml:space="preserve">An old sign that says FUNHAUS in chipping paint.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2855"></child>
+        </children>
+    </item>
+    <item nodeId="node-2855">
+        <command xml:space="preserve">unlock door</command>
+        <result xml:space="preserve">What do you want to unlock FUNHAUS Front Door with?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2856"></child>
+        </children>
+    </item>
+    <item nodeId="node-2856">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2857"></child>
+        </children>
+    </item>
+    <item nodeId="node-2857">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2858"></child>
+        </children>
+    </item>
+    <item nodeId="node-2858">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2859"></child>
+        </children>
+    </item>
+    <item nodeId="node-2859">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2860"></child>
+        </children>
+    </item>
+    <item nodeId="node-2860">
+        <command xml:space="preserve">open door</command>
+        <result xml:space="preserve">It seems to be locked.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2861"></child>
+        </children>
+    </item>
+    <item nodeId="node-2861">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">The door is locked, obviously. The FUNHAUS has been abandoned for years. You have to break the lock.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2862"></child>
+        </children>
+    </item>
+    <item nodeId="node-2862">
+        <command xml:space="preserve">break lock</command>
+        <result xml:space="preserve">What do you want to break Lock with?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2863"></child>
+        </children>
+    </item>
+    <item nodeId="node-2863">
+        <command xml:space="preserve">i</command>
+        <result xml:space="preserve">You are carrying:
+  Pliers
+  Pepper spray
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2864"></child>
+        </children>
+    </item>
+    <item nodeId="node-2864">
+        <command xml:space="preserve">use pliers</command>
+        <result xml:space="preserve">That's not a verb I recognise.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2865"></child>
+        </children>
+    </item>
+    <item nodeId="node-2865">
+        <command xml:space="preserve">break lock with pliers</command>
+        <result xml:space="preserve">You break the lock on the door to the FUNHAUS.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2866"></child>
+        </children>
+    </item>
+    <item nodeId="node-2866">
+        <command xml:space="preserve">open door</command>
+        <result xml:space="preserve">You open FUNHAUS Front Door.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2867"></child>
+        </children>
+    </item>
+    <item nodeId="node-2867">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">The Hallway
+A black, ominous hallway. A faded pink door is to the west and a faded blue door is to the east.
+
+A flash of white face paint and big red nose grab Jessica from your side. Before you know it they're gone, and all you can hear is the clown cackling and Jessica screaming as he takes her farther and farther into the house. You're all alone now. You have to find her and escape as soon as you can.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2868"></child>
+        </children>
+    </item>
+    <item nodeId="node-2868">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">(first opening Pink door)
+
+The Ball Pit
+You fall off the edge of the doorway into a pit of plastic colored balls. The walls are completely bare except for four Colored Indentations with a big button next to them.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2869"></child>
+        </children>
+    </item>
+    <item nodeId="node-2869">
+        <command xml:space="preserve">x balls</command>
+        <result xml:space="preserve">Plastic colored balls of the purple, red, yellow, pink, green, and blue variety.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2870"></child>
+        </children>
+    </item>
+    <item nodeId="node-2870">
+        <command xml:space="preserve">x button</command>
+        <result xml:space="preserve">A big, red button, probably meant for pressing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2871"></child>
+        </children>
+    </item>
+    <item nodeId="node-2871">
+        <command xml:space="preserve">press button</command>
+        <result xml:space="preserve">Doesn't seem to do anything yet.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2872"></child>
+        </children>
+    </item>
+    <item nodeId="node-2872">
+        <command xml:space="preserve">x colored indentations</command>
+        <result xml:space="preserve">There are four spherical indentations on the wall. A red indentation, a blue indentation, a yellow indentation, and a green indentation.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2873"></child>
+        </children>
+    </item>
+    <item nodeId="node-2873">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">The door slammed shut when you fell in and is locked now. You hear a cackle on the other side. Looks like you're not so alone.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2874"></child>
+        </children>
+    </item>
+    <item nodeId="node-2874">
+        <command xml:space="preserve">i</command>
+        <result xml:space="preserve">You are carrying:
+  Pliers
+  Pepper spray
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2875"></child>
+        </children>
+    </item>
+    <item nodeId="node-2875">
+        <command xml:space="preserve">look</command>
+        <result xml:space="preserve">The Ball Pit
+You fall off the edge of the doorway into a pit of plastic colored balls. The walls are completely bare except for four Colored Indentations with a big button next to them.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2876"></child>
+        </children>
+    </item>
+    <item nodeId="node-2876">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">It's just walls. Nowhere to go.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2877"></child>
+        </children>
+    </item>
+    <item nodeId="node-2877">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2878"></child>
+        </children>
+    </item>
+    <item nodeId="node-2878">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">The door slammed shut when you fell in and is locked now. You hear a cackle on the other side. Looks like you're not so alone.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2879"></child>
+        </children>
+    </item>
+    <item nodeId="node-2879">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2880"></child>
+        </children>
+    </item>
+    <item nodeId="node-2880">
+        <command xml:space="preserve">up</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2881"></child>
+        </children>
+    </item>
+    <item nodeId="node-2881">
+        <command xml:space="preserve">down</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2882"></child>
+        </children>
+    </item>
+    <item nodeId="node-2882">
+        <command xml:space="preserve">x walls</command>
+        <result xml:space="preserve">Blank walls.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2883"></child>
+        </children>
+    </item>
+    <item nodeId="node-2883">
+        <command xml:space="preserve">take balls</command>
+        <result xml:space="preserve">Which ball do you mean dummy? You can't take all of them at once. Jeez, you have to be smarter than this if you want to make it out alive.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2884"></child>
+        </children>
+    </item>
+    <item nodeId="node-2884">
+        <command xml:space="preserve">take blue ball</command>
+        <result xml:space="preserve">Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2885"></child>
+        </children>
+    </item>
+    <item nodeId="node-2885">
+        <command xml:space="preserve">take yellow ball</command>
+        <result xml:space="preserve">Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2886"></child>
+        </children>
+    </item>
+    <item nodeId="node-2886">
+        <command xml:space="preserve">take red ball</command>
+        <result xml:space="preserve">Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2887"></child>
+        </children>
+    </item>
+    <item nodeId="node-2887">
+        <command xml:space="preserve">x indentations</command>
+        <result xml:space="preserve">Which do you mean, Indentations, Red indentation, Blue indentation, Yellow indentation or Green indentation?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2888"></child>
+        </children>
+    </item>
+    <item nodeId="node-2888">
+        <command xml:space="preserve">take green ball</command>
+        <result xml:space="preserve">Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2889"></child>
+        </children>
+    </item>
+    <item nodeId="node-2889">
+        <command xml:space="preserve">commands list</command>
+        <result xml:space="preserve">This is a list of commands available in the game. Any other action does not exist. Available shortcuts for commands are in parenthesis. 
+
+Commands: North (n), East (e), South (s), West (w), up, down, Examine (x), Look (l), Inventory (i), 
+Break ____ with ____ , Take ____ , Insert ____ into____, Press ____, Talk to ____, Fix____ with ____ , Pepperspray ____.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2890"></child>
+        </children>
+    </item>
+    <item nodeId="node-2890">
+        <command xml:space="preserve">insert red ball into red indentation</command>
+        <result xml:space="preserve">You put Red ball into Red indentation.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2891"></child>
+        </children>
+    </item>
+    <item nodeId="node-2891">
+        <command xml:space="preserve">insert blue ball into blue indentation</command>
+        <result xml:space="preserve">You put Blue ball into Blue indentation.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2892"></child>
+        </children>
+    </item>
+    <item nodeId="node-2892">
+        <command xml:space="preserve">insert yellow ball into yellow indentation</command>
+        <result xml:space="preserve">You put Yellow ball into Yellow indentation.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2893"></child>
+        </children>
+    </item>
+    <item nodeId="node-2893">
+        <command xml:space="preserve">insert green ball into green indentation</command>
+        <result xml:space="preserve">You put Green ball into Green indentation.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2894"></child>
+        </children>
+    </item>
+    <item nodeId="node-2894">
+        <command xml:space="preserve">press button</command>
+        <result xml:space="preserve">A big rumbling noise erupts around you. You stand in awe as the wall starts to crack. A large rectangular piece of it breaks off and falls into the room, and you barely move out of the way in time. It's a doorway to another room to the north.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2895"></child>
+        </children>
+    </item>
+    <item nodeId="node-2895">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+The Creepy Paintings
+The room's walls are lined with dozens of creepy, nerve-racking paintings. There are ones of clowns, dolls, fake Mona Lisa, and even a ghastly girl standing in a dark forest. Wait, the Ghastly Girl seems to be moving! You can see an exit here to the east.
+
+"Hey little one, why don't you come over and talk to me?" says Ghastly Girl.
+ 
+ (To talk to Ghastly Girl, simply type "Talk to Ghastly Girl.")
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2896"></child>
+        </children>
+    </item>
+    <item nodeId="node-2896">
+        <command xml:space="preserve">x paintings</command>
+        <result xml:space="preserve">Creepy, nerve-racking paintings, staring with their beady eyes into your soul.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2897"></child>
+        </children>
+    </item>
+    <item nodeId="node-2897">
+        <command xml:space="preserve">x girl</command>
+        <result xml:space="preserve">Her face is shrouded by her black, stringy hair. She wears a simple but old-fashioned black dress, and she stands in the middle of a dark forest where nothing seems to grow. Who was the madman who thought to paint this one?!
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2898"></child>
+        </children>
+    </item>
+    <item nodeId="node-2898">
+        <command xml:space="preserve">talk to ghastly girl</command>
+        <result xml:space="preserve"> "Hey," you say reluctantly. 
+
+ "Hi there, you're new. We don't normally get a lot of visitors around here," replies Ghastly Girl. (To continue talking to Ghastly Girl, simply type "Talk to Ghastly Girl OR g"). 
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2899"></child>
+        </children>
+    </item>
+    <item nodeId="node-2899">
+        <command xml:space="preserve">g</command>
+        <result xml:space="preserve"> "Yeah, well I'm not surprised about that part," you say with a sigh, looking around the dilapidated room. 
+
+ "What's that supposed to mean?! I'll have you know, I actually just saw someone else a few minutes ago, and she was was prettier than you!" Ghastly Girl exclaimed. She looks hurt, like a small child. (To continue talking to Ghastly Girl, simply type "Talk to Ghastly Girl OR g"). 
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2900"></child>
+        </children>
+    </item>
+    <item nodeId="node-2900">
+        <command xml:space="preserve">g</command>
+        <result xml:space="preserve"> "Wait, I'm sorry, I didn't mean that," you hastily apologize. "Who did you see?" 
+
+ "Oh, what's it to you?" Ghastly Girl replies sassily. (To continue talking to Ghastly Girl, simply type "Talk to Ghastly Girl OR g"). 
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2901"></child>
+        </children>
+    </item>
+    <item nodeId="node-2901">
+        <command xml:space="preserve">g</command>
+        <result xml:space="preserve"> "I lost my friend and I'm looking for her. Please, it's really important!" you beg desperately. 
+
+ "Oh fine, I might have seen the master move a certain rug over in the Bedroom, but I don't know." (To continue talking to Ghastly Girl, simply type "Talk to Ghastly Girl OR g"). 
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2902"></child>
+        </children>
+    </item>
+    <item nodeId="node-2902">
+        <command xml:space="preserve">g</command>
+        <result xml:space="preserve"> "A rug? Some help you are. Whatever." you reply. 
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2903"></child>
+        </children>
+    </item>
+    <item nodeId="node-2903">
+        <command xml:space="preserve">loo</command>
+        <result xml:space="preserve">That's not a verb I recognise.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2904"></child>
+        </children>
+    </item>
+    <item nodeId="node-2904">
+        <command xml:space="preserve">look</command>
+        <result xml:space="preserve">The Creepy Paintings
+The room's walls are lined with dozens of creepy, nerve-racking paintings. There are ones of clowns, dolls, fake Mona Lisa, and even a ghastly girl standing in a dark forest. Wait, the Ghastly Girl seems to be moving! You can see an exit here to the east.
+
+"Hey little one, why don't you come over and talk to me?" says Ghastly Girl.
+ 
+ (To talk to Ghastly Girl, simply type "Talk to Ghastly Girl.")
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2905"></child>
+        </children>
+    </item>
+    <item nodeId="node-2905">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+The Rustic Bedroom
+You walk into a bedroom that seems completely out of place in the FUNHAUS. It has red walls and a large bed with a rich brown colored oak headboard. There's a brown oak table by the bed with a vase on it and a big tapestry-like rug in the middle of the room. You can see an exit here to the west.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2906"></child>
+        </children>
+    </item>
+    <item nodeId="node-2906">
+        <command xml:space="preserve">x walls</command>
+        <result xml:space="preserve">Deep burgundy walls surround you in the bedroom.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2907"></child>
+        </children>
+    </item>
+    <item nodeId="node-2907">
+        <command xml:space="preserve">x bed</command>
+        <result xml:space="preserve">A big bed with lots of pillows and blankets. One of the pillows looks out of place.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2908"></child>
+        </children>
+    </item>
+    <item nodeId="node-2908">
+        <command xml:space="preserve">x headboard</command>
+        <result xml:space="preserve">A large, beautiful oak headboard.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2909"></child>
+        </children>
+    </item>
+    <item nodeId="node-2909">
+        <command xml:space="preserve">x table</command>
+        <result xml:space="preserve">A small bedside table. A vase is here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2910"></child>
+        </children>
+    </item>
+    <item nodeId="node-2910">
+        <command xml:space="preserve">x vase</command>
+        <result xml:space="preserve">A tall, skinny red vase.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2911"></child>
+        </children>
+    </item>
+    <item nodeId="node-2911">
+        <command xml:space="preserve">take vase</command>
+        <result xml:space="preserve">Nuh-uh. We're already trying to make it out of here without breaking ourselves, we don't need to worry about a vase too.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2912"></child>
+        </children>
+    </item>
+    <item nodeId="node-2912">
+        <command xml:space="preserve">x rug</command>
+        <result xml:space="preserve">The rug has very small and intricate red and gold detailing all over it. It looks like it's a little crooked, like it's been moved recently.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2913"></child>
+        </children>
+    </item>
+    <item nodeId="node-2913">
+        <command xml:space="preserve">move rug</command>
+        <result xml:space="preserve">You move just a corner of the rug up and discover that the floor underneath it is a much darker shade of wood than anywhere else in the room. You move the rug completely out of the way revealing a trapdoor leading down!
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2914"></child>
+        </children>
+    </item>
+    <item nodeId="node-2914">
+        <command xml:space="preserve">down</command>
+        <result xml:space="preserve">The Basement
+A dark room with cement walls and floors. There's hardly any furniture in here except for a shelf on the west wall. There's an exit to the south.
+
+"Oh my god, you found me! Help!" exclaims Jess. 
+ 
+ (To talk to Jess, simply type "Talk to Jess".). .
+
+After you jump down through the trapdoor, you see Jess in the corner of the dark room tied up! The clown doesn't seem to be around right now, hurry!
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2915"></child>
+        </children>
+    </item>
+    <item nodeId="node-2915">
+        <command xml:space="preserve">x walls</command>
+        <result xml:space="preserve">Dark cement walls.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2916"></child>
+        </children>
+    </item>
+    <item nodeId="node-2916">
+        <command xml:space="preserve">x floors</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2917"></child>
+        </children>
+    </item>
+    <item nodeId="node-2917">
+        <command xml:space="preserve">x shelf</command>
+        <result xml:space="preserve">An old shelf. The only thing on it is a rusty old knife.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2918"></child>
+        </children>
+    </item>
+    <item nodeId="node-2918">
+        <command xml:space="preserve">take knife</command>
+        <result xml:space="preserve">Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2919"></child>
+        </children>
+    </item>
+    <item nodeId="node-2919">
+        <command xml:space="preserve">talk to jess</command>
+        <result xml:space="preserve"> "Jess! Are you okay?" you ask. 
+
+ "I'm okay, we have to  get out of here! The clown left, but he'll be back soon..." she replies with fear shaking her voice. (To continue talking to Jess, simply type "Talk to Jess" OR g.)  
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2920"></child>
+        </children>
+    </item>
+    <item nodeId="node-2920">
+        <command xml:space="preserve">g</command>
+        <result xml:space="preserve"> "Okay, but you're tied up!" you exclaim. 
+
+ "Yeah, I guess you have to find something to break the rope," she says. 
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2921"></child>
+        </children>
+    </item>
+    <item nodeId="node-2921">
+        <command xml:space="preserve">commands list</command>
+        <result xml:space="preserve">This is a list of commands available in the game. Any other action does not exist. Available shortcuts for commands are in parenthesis. 
+
+Commands: North (n), East (e), South (s), West (w), up, down, Examine (x), Look (l), Inventory (i), 
+Break ____ with ____ , Take ____ , Insert ____ into____, Press ____, Talk to ____, Fix____ with ____ , Pepperspray ____.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2922"></child>
+        </children>
+    </item>
+    <item nodeId="node-2922">
+        <command xml:space="preserve">break rope with knife</command>
+        <result xml:space="preserve">You cut through the rope binding her wrists with the knife. 
+
+ To talk to Jess, simply type "Talk to Jess".
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2923"></child>
+        </children>
+    </item>
+    <item nodeId="node-2923">
+        <command xml:space="preserve">talk to jess</command>
+        <result xml:space="preserve">"Oh, finally! My wrists feel so much better now, let's get out of here!" Jess exclaims.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2924"></child>
+        </children>
+    </item>
+    <item nodeId="node-2924">
+        <command xml:space="preserve">g</command>
+        <result xml:space="preserve">"Oh, finally! My wrists feel so much better now, let's get out of here!" Jess exclaims.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2925"></child>
+        </children>
+    </item>
+    <item nodeId="node-2925">
+        <command xml:space="preserve">look</command>
+        <result xml:space="preserve">The Basement
+A dark room with cement walls and floors. There's hardly any furniture in here except for a shelf on the west wall. There's an exit to the south.
+
+. .
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2926"></child>
+        </children>
+    </item>
+    <item nodeId="node-2926">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">The Secret Passageway
+A barren passageway with a trapdoor on the ceiling leading up to the outside world.
+
+You run into the Secret Passageway and are met with a cackle and the white-faced, red-nosed clown that has been tormenting you all night! He's blocking the only way out and up back to freedom!
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2927"></child>
+        </children>
+    </item>
+    <item nodeId="node-2927">
+        <command xml:space="preserve">pepperspray clown</command>
+        <result xml:space="preserve">You pepper spray the clown, messing up his makeup and rendering him completely useless to his cause of never letting you two leave.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2928"></child>
+        </children>
+    </item>
+    <item nodeId="node-2928">
+        <command xml:space="preserve">look</command>
+        <result xml:space="preserve">The Secret Passageway
+A barren passageway with a trapdoor on the ceiling leading up to the outside world.
+
+. .
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2929"></child>
+        </children>
+    </item>
+    <item nodeId="node-2929">
+        <command xml:space="preserve">x clown</command>
+        <result xml:space="preserve">A terrifying clown hiding his face behind white face paint and a big red nose. He holds Jess by the back of her shirt, smiling at you.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-2930"></child>
+        </children>
+    </item>
+    <item nodeId="node-2930">
+        <command xml:space="preserve">up</command>
+        <result xml:space="preserve">You climb up through the trapdoor and find yourself back outside! You're out of that god-awful FUNHAUS and you're never going back again. Freedom!
+
+
+
+    *** The End ***
+
+
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+&gt; </result>
+        <commentary xml:space="preserve"></commentary>
     </item>
     <item nodeId="node-1003">
         <command xml:space="preserve">x doir</command>
